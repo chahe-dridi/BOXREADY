@@ -40,6 +40,6 @@ git push origin feature/page-name
 
 #### 🎨 CSS Guidelines
 
-Global styles go inside css/style.css.
-Component-specific styles inside css/components/.
-Page-specific styles inside css/pages/.
+- **Global styles** go inside `css/style.css`.
+- **Component-specific styles** inside `css/components/`.
+- **Page-specific styles** inside `css/pages/`.
