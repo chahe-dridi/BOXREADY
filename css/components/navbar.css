@@ -1,0 +1,79 @@
+.navbar {
+  background: var(--primary-color);
+  padding: 1rem 0;
+}
+
+.navbar-container {
+  max-width: 66.56rem; /* 1065px */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ✅ Logo */
+.navbar-logo {
+  font-size: var(--heading-5);
+  font-weight: var(--font-bold);
+  color: var(--nav-text);
+  text-decoration: none;
+}
+
+/* ✅ Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--nav-text);
+  text-decoration: none;
+  font-size: var(--body-text);
+  font-weight: var(--font-medium);
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+}
+
+/* ✅ Navbar Icons */
+.navbar-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.icon-button img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%); /* Makes white icons on dark backgrounds */
+  transition: opacity 0.3s;
+}
+
+.icon-button:hover img {
+  opacity: 0.7;
+}
+
+/* ✅ Responsive Navbar (Mobile) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links on small screens */
+  }
+
+  .navbar-icons {
+    gap: 10px;
+  }
+
+  .icon-button img {
+    width: 20px;
+    height: 20px;
+  }
+}

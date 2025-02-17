@@ -1,0 +1,175 @@
+/* ✅ Load Montserrat Variable Font Locally */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 900; /* Supports all weights from 100 to 900 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 900; /* Supports all weights from 100 to 900 */
+  font-style: italic;
+}
+
+/* ✅ Global Styles for Typography & Colors */
+:root {
+  /* 🎨 Color Palette */
+  --primary-color: #1e824c; /* Main brand color */
+  --secondary-color: #f17228; /* Accent color */
+  --text-color: #000; /* Default text */
+  --bg-color: #f8f5e1; /* Light background */
+  --footer-bg: #222; /* Footer background */
+  --footer-text: #bbb;
+  --nav-text: white;
+  --cta-bg: #e74c3c; /* CTA button background */
+  --cta-hover: #c0392b; /* CTA hover effect */
+
+  /* 🔠 Typography */
+  --font-primary: 'Montserrat', sans-serif;
+
+  /* 🏗 Font Sizes */
+  --large-title: 72px; /* Main titles, slogans */
+  --heading-1: 56px; /* Page titles */
+  --heading-2: 48px; /* Section titles */
+  --heading-3: 36px; /* Subtitles */
+  --heading-4: 28px; /* Context headers */
+  --heading-5: 20px; /* Block titles */
+  --body-text: 16px; /* Main body text */
+  --body-caption: 14px; /* Secondary text, captions */
+  --excerpt: 12px; /* Small details */
+
+  /* 🔠 Font Weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+/* ✅ Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* ✅ Headings */
+h1 {
+  font-size: var(--heading-1);
+  font-weight: var(--font-bold);
+}
+h2 {
+  font-size: var(--heading-2);
+  font-weight: var(--font-semibold);
+}
+h3 {
+  font-size: var(--heading-3);
+  font-weight: var(--font-medium);
+}
+h4 {
+  font-size: var(--heading-4);
+  font-weight: var(--font-regular);
+}
+h5 {
+  font-size: var(--heading-5);
+  font-weight: var(--font-medium);
+}
+
+/* ✅ Body Text */
+p {
+  font-size: var(--body-text);
+  font-weight: var(--font-regular);
+}
+
+/* ✅ Emphasized Text */
+strong,
+.body-emphasis {
+  font-weight: var(--font-bold);
+}
+
+/* ✅ Captions & Excerpts */
+.caption {
+  font-size: var(--body-caption);
+  font-weight: var(--font-regular);
+  color: gray;
+}
+.excerpt {
+  font-size: var(--excerpt);
+  font-weight: var(--font-light);
+  color: darkgray;
+}
+
+/* ✅ Navigation */
+.nav-item {
+  font-size: var(--body-text);
+  font-weight: 600;
+  color: var(--nav-text);
+  text-decoration: none;
+}
+.nav-subitem {
+  font-size: var(--body-caption);
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+/* ✅ Buttons */
+.button {
+  font-size: var(--body-text);
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: var(--cta-bg);
+  color: white;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: var(--cta-hover);
+}
+
+/* ✅ Footer */
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: var(--heading-5);
+  font-weight: var(--font-bold);
+}
+.footer-link {
+  font-size: var(--body-text);
+  text-decoration: none;
+  color: white;
+}
+.footer-subtext {
+  font-size: var(--body-caption);
+  color: var(--footer-text);
+}
+.footer-small {
+  font-size: var(--excerpt);
+  color: var(--footer-text);
+}
+
+/* ✅ General Page Container */
+.container {
+  max-width: 66.56rem; /* 1065px in rem */
+  margin: 0 auto; /* Centering */
+  padding: 0 1rem; /* Add a bit of space on smaller screens */
+}
