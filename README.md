@@ -28,7 +28,8 @@ git checkout -b feature/page-name
 ### 3️⃣ Implement Your Code
 
 . Add your HTML inside /pages/.
-. Add styles inside ./css/.
+. Add styles inside ./css/components or ./css/pages.
+. Import added file inside ./css/global.css
 
 ### 4️⃣ Commit & Push Your Changes
 
