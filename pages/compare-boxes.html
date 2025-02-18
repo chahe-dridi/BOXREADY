@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Boxes - BoxReady</title>
+    <link rel="stylesheet" href="../css/pages/compare-boxes.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BOXREADY</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Boxes</a></li>
+                <li><a href="#">My Orders</a></li>
+                <li><a href="#">My Posts</a></li>
+                <li><a href="#">Favorite List</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 class="main-title">Compare Boxes</h1>
+        <div class="compare-container">
+            <!-- Box 1 - Cozy Pasta -->
+            <div class="product-box">
+                <img src="../assets/images/image.png" alt="Cozy Pasta Box" class="box-image">
+                <h2 class="box-title">Cozy Pasta Box</h2>
+                <p class="box-price">12.900 TND</p>
+                  <!-- je vais changer ingredient comme en figma(liste)-->
+                <div class="ingredients-section">
+                    <h3 class="section-heading">Ingredients</h3>
+                    <ul class="ingredients-list">
+                        <li class="ingredient-item">
+                            <input type="checkbox" id="chicken1">
+                            <label for="chicken1">Grilled Chicken Breast</label>
+                        </li>
+                        <li class="ingredient-item">
+                            <input type="checkbox" id="tuna1">
+                            <label for="tuna1">Tuna</label>
+                        </li>
+                        <li class="ingredient-item">
+                            <input type="checkbox" id="cheese1">
+                            <label for="cheese1">Cheddar Cheese</label>
+                        </li>
+                        <li class="ingredient-item">
+                            <input type="checkbox" id="egg1">
+                            <label for="egg1">Boiled Egg</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="calories-section">
+                    <h3 class="section-heading">Calories & Portions</h3>
+                    <div class="calorie-group">
+                        <div class="food-name">Pasta</div>
+                        <div class="portion-options">
+                            <label class="portion-option">
+                                <input type="radio" name="pasta-portion" checked>
+                                <span>100g - 130kcal</span>
+                            </label>
+                            <label class="portion-option">
+                                <input type="radio" name="pasta-portion">
+                                <span>150g - 195kcal</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="calorie-group">
+                        <div class="food-name">Tuna</div>
+                        <div class="portion-options">
+                            <label class="portion-option">
+                                <input type="radio" name="tuna-portion">
+                                <span>100g - 120kcal</span>
+                            </label>
+                            <label class="portion-option">
+                                <input type="radio" name="tuna-portion" checked>
+                                <span>150g - 180kcal</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="save-button">SAVE SELECTION</button>
+            </div>
+
+            <!-- Box 2 - Smart Fuel -->
+            <div class="product-box">
+                <img src="../assets/images/image.png" alt="Smart Fuel Box" class="box-image">
+                <h2 class="box-title">Smart Fuel Box</h2>
+                <p class="box-price">12.500 TND</p>
+                
+                <div class="ingredients-section">
+                    <h3 class="section-heading">Ingredients</h3>
+                    <ul class="ingredients-list">
+                        <li class="ingredient-item">
+                            <input type="checkbox" id="sauce2">
+                            <label for="sauce2">Mustard Sauce</label>
+                        </li>
+                        <li class="ingredient-item">
+                            <input type="checkbox" id="lettuce2">
+                            <label for="lettuce2">Lettuce</label>
+                        </li>
+                        <li class="ingredient-item">
+                            <input type="checkbox" id="rice2">
+                            <label for="rice2">Brown Rice</label>
+                        </li>
+                        <li class="ingredient-item">
+                            <input type="checkbox" id="egg2">
+                            <label for="egg2">Boiled Egg</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="calories-section">
+                    <h3 class="section-heading">Calories & Portions</h3>
+                    <div class="calorie-group">
+                        <div class="food-name">Brown Rice</div>
+                        <div class="portion-options">
+                            <label class="portion-option">
+                                <input type="radio" name="rice-portion">
+                                <span>100g - 110kcal</span>
+                            </label>
+                            <label class="portion-option">
+                                <input type="radio" name="rice-portion" checked>
+                                <span>150g - 165kcal</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="calorie-group">
+                        <div class="food-name">Boiled Egg</div>
+                        <div class="portion-options">
+                            <label class="portion-option">
+                                <input type="radio" name="egg-portion">
+                                <span>1 (50g) - 70kcal</span>
+                            </label>
+                            <label class="portion-option">
+                                <input type="radio" name="egg-portion" checked>
+                                <span>2 (100g) - 140kcal</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="save-button">SAVE SELECTION</button>
+            </div>
+        </div>
+
+        <!-- Recommendations Section -->
+        <section class="recommendations-section">
+            <h2 class="section-title">You may also like</h2>
+            <div class="recommendation-grid">
+                <div class="recommendation-card">
+                    <img src="../assets/images/image.png" alt="Golden Rice">
+                    <div class="recommendation-info">
+                        <h3>Golden Rice Biryani Box</h3>
+                        <p class="price">11.750 TND</p>
+                    </div>
+                </div>
+                <div class="recommendation-card">
+                    <img src="../assets/images/image.png" alt="Little Bites">
+                    <div class="recommendation-info">
+                        <h3>Little Bites Box</h3>
+                        <p class="price">9.500 TND</p>
+                    </div>
+                </div>
+                <div class="recommendation-card">
+                    <img src="../assets/images/image.png" alt="Fiery Flavors">
+                    <div class="recommendation-info">
+                        <h3>Fiery Flavors Spicy Box</h3>
+                        <p class="price">15.500 TND</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="brand-info">
+                <div class="logo">BOXREADY</div>
+                <p>Healthy meals delivered fast</p>
+            </div>
+            <div class="footer-nav">
+                <div class="nav-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our Boxes</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+                <div class="nav-column">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">My Posts</a></li>
+                        <li><a href="#">Favorites</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <h4>Contact</h4>
+                    <p>+216 70 230 000</p>
+                    <p>contact@boxready.com</p>
+                    <p>El Ghazala, Ariana</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
