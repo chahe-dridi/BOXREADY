@@ -28,14 +28,13 @@
 .nav-links a {
   color: var(--nav-text);
   text-decoration: none;
-  font-size: var(--body-text);
-  font-weight: var(--font-medium);
+  font-size: var(--NavItem);
+  font-weight: var(--font-semibold);
   padding: 8px 12px;
-  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 /* ✅ Navbar Icons */

@@ -20,13 +20,11 @@
   /* 🎨 Color Palette */
   --primary-color: #1e824c; /* Main brand color */
   --secondary-color: #f17228; /* Accent color */
-  --text-color: #000; /* Default text */
+  --text-color: #000000; /* Default text */
   --bg-color: #f8f5e1; /* Light background */
-  --footer-bg: #222; /* Footer background */
-  --footer-text: #bbb;
-  --nav-text: white;
-  --cta-bg: #e74c3c; /* CTA button background */
-  --cta-hover: #c0392b; /* CTA hover effect */
+  --footer-text: #ffffff;
+  --nav-text: #ffffff; /* Navigation text */
+  --text-details: #4A4A4A ; /* Text details */
 
   /* 🔠 Typography */
   --font-primary: 'Montserrat', sans-serif;
@@ -41,6 +39,8 @@
   --body-text: 16px; /* Main body text */
   --body-caption: 14px; /* Secondary text, captions */
   --excerpt: 12px; /* Small details */
+  --NavItem: 16px; /* Navigation links */
+  --FooterLink:16px; /* Footer links */
 
   /* 🔠 Font Weights */
   --font-light: 300;
@@ -123,27 +123,8 @@ strong,
   text-decoration: none;
 }
 
-/* ✅ Buttons */
-.button {
-  font-size: var(--body-text);
-  font-weight: var(--font-bold);
-  text-transform: uppercase;
-  padding: 12px 24px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  background: var(--cta-bg);
-  color: white;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background: var(--cta-hover);
-}
-
 /* ✅ Footer */
 .footer {
-  background: var(--footer-bg);
   color: var(--footer-text);
   padding: 20px;
   text-align: center;
@@ -153,17 +134,16 @@ strong,
   font-size: var(--heading-5);
   font-weight: var(--font-bold);
 }
+
 .footer-link {
-  font-size: var(--body-text);
-  text-decoration: none;
-  color: white;
-}
-.footer-subtext {
-  font-size: var(--body-caption);
+  font-size: var(--FooterLink);
+  font-weight: var(--font-semibold);
   color: var(--footer-text);
 }
+
 .footer-small {
   font-size: var(--excerpt);
+  font-weight: var(--font-semibold);
   color: var(--footer-text);
 }
 
