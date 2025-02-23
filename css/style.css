@@ -3,6 +3,7 @@
 
 /* ✅ Import Components (navbar, buttons, modals, etc.) */
 @import url('components/navbar.css');
+@import url('components/footer.css');
 @import url('components/button.css');
 
 /* ✅ Import Page-Specific Styles (these override component styles if needed) */
