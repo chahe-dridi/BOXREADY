@@ -16,6 +16,14 @@
   .footer-section {
     flex: 1;
     padding: 0 20px;
+    text-align: center; /* Centre le titre */
+
+  }
+  
+  .footer-logo-section {
+    display: flex;
+    align-items: center; /* Aligne l'icône et le texte */
+    gap: 10px; /* Ajoute un espace entre eux */
   }
   
   
@@ -34,7 +42,6 @@
   }
   
   .footer-links a {
-    display: block;
     font-size: var(--FooterLink);
     font-weight: var(--font-semibold);
     color: var(--footer-text);
@@ -42,36 +49,46 @@
     margin-bottom: 8px;
     padding: 8px 12px;
   }
-  
+
+  .footer-section .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne les liens à gauche */
+    margin: 0 auto; /* Centre le bloc des liens dans la section */
+    width: fit-content; /* Ajuste la largeur au contenu */
+}
+
   .footer-links a:hover {
     color: var(--text-color);
   }
   
-  
+
+
   /* Follow Us Section */
   .social-icons {
     display: flex;
     flex-direction: column;  /* Met les icônes l'une sous l'autre */
-    gap: 10px;  /* Ajoute un espace entre les icônes */
+    gap: 20px;  /* Ajoute un espace entre les icônes */
+    align-items: flex-start; /* Aligne les liens à gauche */
+    margin: 0 auto; /* Centre le bloc des liens dans la section */
+    width: fit-content; /* Ajuste la largeur au contenu */
   }
   
   .social-icons button {
     background: none;
     border: none;
     cursor: pointer;
-    display: block;  /* S'assurer que chaque icône est sur sa propre ligne */
-    width: 100%;  /* Pour occuper toute la largeur disponible */
+    width: auto;  /* Pour occuper toute la largeur disponible */
   }
   
   .social-icons img {
-    width: 30px;  /* Ajuste la taille des icônes */
-    height: 30px;
     margin: 0 auto;  /* Centrer les icônes */
     transition: opacity 0.3s;
+
   }
   
   .social-icons button:hover img {
-    opacity: 0.7r;
+    opacity: 0.7;
   }
   
   /* Contact Section */

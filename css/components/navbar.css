@@ -18,6 +18,11 @@
   color: var(--nav-text);
   text-decoration: none;
 }
+.navbar-logo-section {
+  display: flex;
+  align-items: center; /* Aligne l'icône et le texte */
+  gap: 10px; /* Ajoute un espace entre eux */
+}
 
 /* ✅ Navigation Links */
 .nav-links {
