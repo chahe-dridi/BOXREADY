@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* ✅ Global Styles */
+@layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    @apply bg-background text-text leading-relaxed;
+  }
+
+  h1 {
+    @apply text-heading1 font-bold;
+  }
+  h2 {
+    @apply text-heading2 font-semibold;
+  }
+  h3 {
+    @apply text-heading3 font-medium;
+  }
+  h4 {
+    @apply text-heading4 font-regular;
+  }
+  h5 {
+    @apply text-heading5 font-medium;
+  }
+
+  p {
+    @apply text-body font-regular;
+  }
+
+  strong,
+  .body-emphasis {
+    @apply font-bold;
+  }
+
+  .caption {
+    @apply text-caption font-regular text-gray-500;
+  }
+
+  .excerpt {
+    @apply text-excerpt font-light text-gray-400;
+  }
+}
+
+/* ✅ Navigation */
+@layer components {
+  .nav-item {
+    @apply text-navItem font-semibold text-navText no-underline;
+  }
+  .nav-subitem {
+    @apply text-caption text-footerText no-underline;
+  }
+}
+
+/* ✅ Footer */
+@layer components {
+  .footer {
+    @apply bg-secondary text-footerText text-center p-5;
+  }
+  .footer-title {
+    @apply text-heading5 font-bold;
+  }
+  .footer-link {
+    @apply text-footerLink font-semibold text-footerText;
+  }
+  .footer-small {
+    @apply text-excerpt font-semibold text-footerText;
+  }
+}
+
+/* ✅ Page Container */
+@layer components {
+  .container {
+    @apply max-w-container mx-auto px-4;
+  }
+}

@@ -3,104 +3,167 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/output.css" />
     <title>BOXREADY | HOME</title>
   </head>
-  <body>
-    <header class="navbar">
-      <div class="navbar-container">
+  <body class="bg-background text-text font-primary">
+    <!-- ✅ Navbar -->
+    <header class="bg-primary py-4">
+      <div
+        class="max-w-container mx-auto flex justify-between items-center px-4"
+      >
         <!-- Logo -->
-        <div class="navbar-logo-section">
-          <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" />
-          <p class="navbar-logo">BOXREADY</p>
+        <div class="flex items-center gap-2">
+          <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="h-10" />
+          <p class="text-heading5 font-bold text-navText">BOXREADY</p>
         </div>
-        
+
         <!-- Navigation Links -->
-        <nav class="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Our Boxes</a>
-          <a href="#">My Orders</a>
-          <a href="#">My Posts</a>
-          <a href="#">Favorite List</a>
+        <nav class="hidden md:flex gap-6">
+          <a
+            href="#"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Our Boxes</a
+          >
+          <a
+            href="#"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >My Orders</a
+          >
+          <a
+            href="#"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >My Posts</a
+          >
+          <a
+            href="#"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Favorite List</a
+          >
         </nav>
 
         <!-- Icons (Cart & Search) -->
-        <div class="navbar-icons">
-          <button class="icon-button">
-            <img src="../assets/icons/search.svg" alt="Search" />
+        <div class="flex gap-4">
+          <button class="p-2">
+            <img
+              src="../assets/icons/search.svg"
+              alt="Search"
+              class="h-6 w-6 filter invert"
+            />
           </button>
-          <button class="icon-button">
-            <img src="../assets/icons/shopping_cart.svg" alt="Cart" />
+          <button class="p-2">
+            <img
+              src="../assets/icons/shopping_cart.svg"
+              alt="Cart"
+              class="h-6 w-6 filter invert"
+            />
           </button>
         </div>
       </div>
     </header>
-    <main class="container">
-      <h1>Your Box, Your Meal, Your Way.</h1>
+
+    <!-- ✅ Main Section -->
+    <main class="max-w-container mx-auto text-center py-16">
+      <h1 class="text-heading1 font-bold">Your Box, Your Meal, Your Way.</h1>
     </main>
 
-    <footer class="footer">
-      <div class="footer-container">
+    <!-- ✅ Footer -->
+    <footer class="bg-primary text-footerText py-8">
+      <div
+        class="max-w-container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4"
+      >
         <!-- BOXREADY Section -->
-        <div class="footer-logo-section">
-          <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" />
-          <p class="footer-logo">BOXREADY</p>
+        <div class="flex items-center gap-2">
+          <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="h-10" />
+          <p class="text-heading5 font-bold">BOXREADY</p>
         </div>
-    
-        <!-- Services Section -->
-        <div class="footer-section">
-          <div class="footer-title">Services</div>
-          <div class="footer-links">
-            <a href="#">Home</a>
-            <a href="#">Our Boxes</a>
-            <a href="#">My Orders</a>
-            <a href="#">My Posts</a>
-            <a href="#">Favorite List</a>
-          </div>
-        </div>
-    
-        <!-- Follow Us Section -->
-        <div class="footer-section">
-          <div class="footer-title">Follow Us</div>
-          <div class="social-icons">
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Facebook_Icon.svg" alt="Facebook" />
-            </button>
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Instagram_Icon.svg" alt="Instagram" />
-            </button>
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Tiktok_Icon.svg" alt="Tiktok" />
-            </button>
-          </div>
-        </div>
-    
-        <!-- Contact Section -->
-        <div class="footer-section">
-          <div class="footer-title">Contact</div>
-          <div class="contact-details">
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Phone_Icon.svg" alt="Phone" />
-            </button>
-            <div class="footer-link">(216) 70 250 000</div>
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Mail_Icon.svg" alt="Mail" />
-            </button>
-            <div class="footer-link">contact@boxready.com</div>
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Place_Icon.svg" alt="Place" />
-            </button>
-            <div class="footer-link">El Ghazala</div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="footer-small">
-        © 2024 BoxReady. All rights reserved.
-      </div>
-    </footer>
-    
 
+        <!-- Services -->
+        <div class="text-center">
+          <h3 class="text-heading5 font-bold mb-2">Services</h3>
+          <div class="flex flex-col gap-2">
+            <a href="#" class="text-footerLink hover:text-text transition"
+              >Home</a
+            >
+            <a href="#" class="text-footerLink hover:text-text transition"
+              >Our Boxes</a
+            >
+            <a href="#" class="text-footerLink hover:text-text transition"
+              >My Orders</a
+            >
+            <a href="#" class="text-footerLink hover:text-text transition"
+              >My Posts</a
+            >
+            <a href="#" class="text-footerLink hover:text-text transition"
+              >Favorite List</a
+            >
+          </div>
+        </div>
+
+        <!-- Follow Us -->
+        <div class="text-center">
+          <h3 class="text-heading5 font-bold mb-2">Follow Us</h3>
+          <div class="flex flex-col gap-3">
+            <button>
+              <img
+                src="../assets/icons/Facebook_Icon.svg"
+                alt="Facebook"
+                class="h-6 mx-auto hover:opacity-70"
+              />
+            </button>
+            <button>
+              <img
+                src="../assets/icons/Instagram_Icon.svg"
+                alt="Instagram"
+                class="h-6 mx-auto hover:opacity-70"
+              />
+            </button>
+            <button>
+              <img
+                src="../assets/icons/Tiktok_Icon.svg"
+                alt="Tiktok"
+                class="h-6 mx-auto hover:opacity-70"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="text-center">
+          <h3 class="text-heading5 font-bold mb-2">Contact</h3>
+          <div class="flex flex-col items-center gap-2">
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/icons/Phone_Icon.svg"
+                alt="Phone"
+                class="h-5"
+              />
+              <span class="text-footerLink">+216 70 250 000</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="../assets/icons/Mail_Icon.svg" alt="Mail" class="h-5" />
+              <span class="text-footerLink">contact@boxready.com</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/icons/Place_Icon.svg"
+                alt="Location"
+                class="h-5"
+              />
+              <span class="text-footerLink">El Ghazala</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-excerpt text-center mt-8">
+        © 2024 BoxReady. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
-

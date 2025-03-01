@@ -1,0 +1,15 @@
+{
+  "name": "boxready",
+  "version": "1.0.0",
+  "description": "This project is a front-end implementation of Figma designs using **HTML, CSS, and JavaScript**. The goal is to translate the design into code while maintaining structure and reusability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
