@@ -7,7 +7,7 @@
 ## 👥 Team Members & Responsibilities
 
 - **Wassim Triki**: 
-- **Khouloud Blehadj**: Worked on "Box Comparison.html" and "Our Boxes.html"
+- **Khouloud Blehadj**: Worked on "Our Boxes.html" , "Box_Comparison.html" and "Add_My_Review.html" pages.
 - **Chaher Dridi**: 
 - **Gofrane Abidi**: 
 - **Ashref Bouden**: 

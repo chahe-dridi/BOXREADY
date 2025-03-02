@@ -37,21 +37,77 @@
       </div>
     </header>
 
-    <!-- Main Section -->
-    <main class="max-w-container mx-auto text-center py-16 px-4">
-      <div class="flex gap-[30px] flex-1">
-        <a href="Our_Boxes.html">
-            <img src="../assets/icons/Back_Icon.svg" alt="Back Icon"/>
-        </a>
-    </div>
-      <h1 class="text-[56px] font-bold">Add My Box Review</h1>
- 
-      
-<section class="mt-20">
+    <main class="max-w-container mx-auto text-center py-16 px-4 ">
+        <div class="flex gap-[30px] flex-1">
+            <a href="Our_Boxes.html">
+                <img src="../assets/icons/Back_Icon.svg" alt="Back Icon"/>
+            </a>
+        </div>
+      <h1 class="text-[56px] font-bold mb-[100px]">Add My Box Review</h1>
 
+      <section >
+      <div class="flex flex-col items-center text-left ">
 
-</section>
-</main>  
+        <div class="mb-[37px] ">
+          <label for="fullName" class="text-black text-base font-semibold block mb-4 ">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your full name" class="w-[353px] h-[40px] px-4 border rounded-lg focus:ring-2 focus:ring-primary">
+        </div>
+
+        <div class="mb-[37px]">
+          <label for="boxName" class="text-black text-base font-semibold block mb-4">Box Name</label>
+          <input type="text" id="boxName" placeholder="Enter box name" class="w-[353px] h-[40px] px-4 border rounded-lg focus:ring-2 focus:ring-primary">
+        </div>
+
+        <div class="mb-[37px]">
+          <label for="category" class="text-black text-base font-semibold block mb-4">Category</label>
+          <select id="category" class="w-[353px] h-[40px] px-4 border rounded-lg focus:ring-2 focus:ring-primary">
+            <option disabled selected>Category</option>
+            <option>Healthy Boxes</option>
+            <option>Kids Boxes</option>
+            <option>Carbs & Comfort Boxes</option>
+          </select>
+        </div>
+
+        <div class="mb-[37px] ">
+            <label for="uploadPhoto" class="text-black text-base font-semibold block mb-4">Upload Box Photo</label>
+            <div class="flex items-center gap-4">
+              <input type="text" id="uploadPhoto" placeholder="Upload photo" class="w-[240px] h-[40px] px-4 border rounded-lg text-center">
+              <button>
+                <img src="../assets/icons/Button_Upload.svg" alt="Upload" />
+              </button>
+            </div>
+          </div>
+
+        <div class="mb-[37px]">
+          <label for="boxReview" class="text-black text-base font-semibold block mb-4">Box Review</label>
+          <textarea id="boxReview" placeholder="Value" class="w-[353px] h-[80px] px-4 border rounded-lg focus:ring-2 focus:ring-primary"></textarea>
+        </div>
+
+        <div class="mb-[37px] flex items-center gap-[25px]">
+            <label for="rating" class="text-black text-base font-semibold">Rating</label>
+            <img src="../assets/icons/rating.svg" alt="Rating" class="w-24" />
+        </div>
+  
+          <div class="flex justify-center gap-[131px] mt-8">
+              <div class="w-[200px] h-[55px] px-2 py-6 bg-[#1e824c] rounded-lg justify-center items-center gap-2.5 inline-flex">
+                <div class="text-center text-black text-base font-bold font-['Montserrat']">
+                    <button>
+                        SAVE
+                    </button>
+                </div>
+              </div>
+              <div class="w-[200px] h-[54.84px] px-2 py-6 bg-[#f17228] rounded-lg justify-center items-center gap-2.5 inline-flex">
+                <div class="text-center text-black text-base font-bold font-['Montserrat']">
+                    <button>
+                        CANCEL
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>  
+        </section>
+    </main>
 
  <!-- Footer -->
     <footer class="bg-primary text-footerText py-8">
