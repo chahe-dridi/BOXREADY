@@ -8,7 +8,7 @@
 
 - **Wassim Triki**: 
 - **Khouloud Blehadj**: Worked on "Our Boxes.html" , "Box_Comparison.html" and "Add_My_Review.html" pages.
-- **Chaher Dridi**: 
+- **Chaher Dridi**: Worked on "user_posts_overview.html" , "box_overview.html" , "users_posts.html" , "My_Posts.html"
 - **Gofrane Abidi**: 
 - **Ashref Bouden**: 
 
