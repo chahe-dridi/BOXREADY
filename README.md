@@ -4,13 +4,13 @@
 
 ---
 
-## 👥 Team Members
+## 👥 Team Members & Responsibilities
 
-- **Wassim Triki**
-- **Khouloud Blehadj**
-- **Chaher Dridi**
-- **Gofrane Abidi**
-- **Ashref Bouden**
+- **Wassim Triki**: 
+- **Khouloud Blehadj**: Worked on "Box Comparison.html" and "Our Boxes.html"
+- **Chaher Dridi**: 
+- **Gofrane Abidi**: 
+- **Ashref Bouden**: 
 
 ---
 
