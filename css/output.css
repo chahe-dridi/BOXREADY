@@ -699,6 +699,14 @@ strong,
   margin-top: 0px;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -865,6 +873,14 @@ strong,
 
 .gap-\[30px\] {
   gap: 30px;
+}
+
+.gap-\[1000px\] {
+  gap: 1000px;
+}
+
+.gap-\[100px\] {
+  gap: 100px;
 }
 
 .space-y-16 > :not([hidden]) ~ :not([hidden]) {
