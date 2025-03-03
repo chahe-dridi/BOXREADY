@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <title>Your Cart</title>
+  </head>
+  <body class="bg-background text-text font-primary">
+    <!-- Navbar -->
+    <header class="bg-primary py-4">
+      <div class="max-w-container mx-auto flex justify-between items-center px-4">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8" />
+          <p class="text-heading5 font-bold text-navText">BOXREADY</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex gap-8">
+          <a href="home.html" class="text-navItem font-semibold text-navText hover:text-text transition">Home</a>
+          <a href="Our_Boxes.html" class="text-navItem font-semibold text-navText hover:text-text transition">Our Boxes</a>
+          <a href="My_Orders.html" class="text-navItem font-semibold text-navText hover:text-text transition">My Orders</a>
+          <a href="My_Posts.html" class="text-navItem font-semibold text-navText hover:text-text transition">My Posts</a>
+          <a href="Favorite_List.html" class="text-navItem font-semibold text-navText hover:text-text transition">Favorite List</a>
+        </nav>
+
+        <!-- Icons (Cart & Search) -->
+        <div class="flex gap-4">
+          <button class="p-2">
+            <img src="../assets/icons/search.svg" alt="Search" class="w-8 h-8 filter invert" />
+          </button>
+          <button class="p-2">
+            <img src="../assets/icons/shopping_cart.svg" alt="Cart" class="w-8 h-8 filter invert" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="max-w-container mx-auto text-center py-16 px-4">
+      <div class="flex gap-[30px] flex-1 mb-8">
+        <a href="home.html" class="text-primary font-semibold">
+          <img src="../assets/icons/Back_Icon.svg" alt="Back Icon" class="w-6 h-6 inline-block mr-2" />
+        </a>
+      </div>
+      <h1 class="text-3xl md:text-5xl font-bold">Your Cart</h1>
+
+      <section class="mt-20 flex flex-col gap-8 items-center">
+        <!-- Box Healthy -->
+        <div class="relative flex justify-between items-center w-[795px] h-[272px] p-6 rounded-lg shadow-lg">
+          <div class="flex items-center gap-4">
+            <img src="../assets/images/box_healthy.png" alt="Box Healthy" class="w-[342px] h-[255px]" />
+            <div>
+              <h2 class="text-xl font-bold">Box Healthy</h2>
+            </div>
+          </div>
+          <div class="absolute top-6 right-6 flex gap-4">
+            <img src="../assets/icons/recycle_bin.svg" alt="Recycle Bin" class="w-6 h-6" />
+            <img src="../assets/icons/box.svg" alt="Box Icon" class="w-6 h-6" />
+          </div>
+          <div class="absolute bottom-6 right-6 flex items-center gap-2">
+            <button class="text-lg font-bold">-</button>
+            <span class="text-lg font-semibold">1</span>
+            <button class="text-lg font-bold">+</button>
+          </div>
+        </div>
+
+        <!-- Box Coscous -->
+        <div class="relative flex justify-between items-center w-[795px] h-[272px] p-6 rounded-lg shadow-lg">
+          <div class="flex items-center gap-4">
+            <img src="../assets/images/box_coscous.png" alt="Box Coscous" class="w-[342px] h-[255px]" />
+            <div>
+              <h2 class="text-xl font-bold">Box Koskous</h2>
+            </div>
+          </div>
+          <div class="absolute top-6 right-6 flex gap-4">
+            <img src="../assets/icons/recycle_bin.svg" alt="Recycle Bin" class="w-6 h-6" />
+            <img src="../assets/icons/boxchecked.svg" alt="Box Icon" class="w-6 h-6" />
+          </div>
+          <div class="absolute bottom-6 right-6 flex items-center gap-2">
+            <button class="text-lg font-bold">-</button>
+            <span class="text-lg font-semibold">2</span>
+            <button class="text-lg font-bold">+</button>
+          </div>
+        </div>
+
+        <!-- Selected Items and Total -->
+        <div class="mt-8  p-6 rounded-lg shadow-lg w-[885px] h-[352px] flex items-center justify-center">
+          <div class="text-center">
+            <h3 class="text-2xl font-semibold mb-4">Selected Items: 2 Box Koskous</h3>
+            <h4 class="text-xl font-bold">TOTAL: 28.000 TND</h4>
+          </div>
+        </div>
+  
+   <!-- Order Now Button -->
+<div class="mt-8">
+    <button class="bg-[#f17228] text-black py-2 px-6 w-[411px] h-[55px] rounded-md text-lg font-semibold hover:bg-orange-500 transition">
+      Order Now
+    </button>
+  </div>
+  
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-footerText py-8">
+      <div class="max-w-container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4">
+        <div class="text-center md:text-left">
+          <div class="flex items-center gap-2 justify-center md:justify-start">
+            <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8" />
+            <p class="text-heading5 font-bold">BOXREADY</p>
+          </div>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h3 class="text-heading5 font-bold mb-8">Services</h3>
+          <div class="flex flex-col md:items-start gap-8">
+            <a href="home.html" class="text-footerLink font-semibold hover:text-text transition">Home</a>
+            <a href="Our_Boxes.html" class="text-footerLink font-semibold hover:text-text transition">Our Boxes</a>
+            <a href="My_Orders.html" class="text-footerLink font-semibold hover:text-text transition">My Orders</a>
+            <a href="My_Posts.html" class="text-footerLink font-semibold hover:text-text transition">My Posts</a>
+            <a href="Favorite_List.html" class="text-footerLink font-semibold hover:text-text transition">Favorite List</a>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h3 class="text-heading5 font-bold mb-8">Follow Us</h3>
+          <div class="flex flex-col md:items-start gap-10">
+            <img src="../assets/icons/Facebook_Icon.svg" alt="Facebook" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+            <img src="../assets/icons/Instagram_Icon.svg" alt="Instagram" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+            <img src="../assets/icons/Tiktok_Icon.svg" alt="Tiktok" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h3 class="text-heading5 font-bold mb-8">Contact</h3>
+          <div class="flex flex-col md:items-start gap-10">
+            <div class="flex items-center gap-2">
+              <span class="text-footerLink font-semibold">+216 70 250 000</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-footerLink font-semibold">contact@boxready.com</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-footerLink font-semibold">El Ghazala</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-excerpt text-center mt-8 font-semibold">© 2024 BoxReady. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
