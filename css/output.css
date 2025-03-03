@@ -825,6 +825,10 @@ strong,
   height: 50px;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -933,6 +937,10 @@ strong,
   width: 68px;
 }
 
+.w-9 {
+  width: 2.25rem;
+}
+
 .max-w-\[400px\] {
   max-width: 400px;
 }
@@ -1039,6 +1047,10 @@ strong,
 
 .border {
   border-width: 1px;
+}
+
+.border-\[3px\] {
+  border-width: 3px;
 }
 
 .border-gray-300 {
