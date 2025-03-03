@@ -27,6 +27,7 @@ export default {
         excerpt: '0.75rem', // 12px
         navItem: '1rem', // 16px
         footerLink: '1rem', // 16px
+        button: '1rem', // 16px
       },
       fontWeight: {
         light: '300',
@@ -34,12 +35,19 @@ export default {
         medium: '500',
         semibold: '600',
         bold: '700',
+        button: '700', // Bold for button
       },
       maxWidth: {
         container: '66.56rem', // 1065px
       },
       spacing: {
         sectionPadding: '2rem', // Add this for sections
+      },
+      borderRadius: {
+        button: '8px', // Custom border radius for button
+      },
+      height: {
+        button: '55px', // Custom height for button
       },
     },
   },

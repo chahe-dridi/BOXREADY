@@ -55,12 +55,8 @@
           <img src="../assets/images/Our_Boxes/Box_1.png" class="w-[610px] h-[568px] mb-8" alt="Box Image" />
           <!-- New Buttons -->
           <div class="mt-4 relative flex gap-4">
-              <button class="w-1/2 h-[55px] bg-[#f17228] rounded-[8px] text-white font-semibold">
-                  MORE DETAILS
-              </button>
-              <button class="w-1/2 h-[55px] bg-transparent border-2 border-[#000] rounded-[8px] text-black font-semibold">
-                  USER POSTS
-              </button>
+            <button class="btn-primary w-1/2">MORE DETAILS</button>
+            <button class="btn-secondary  w-1/2">USER POSTS</button>
           </div>
       </div>
       
@@ -68,19 +64,28 @@
         <!-- Box Details on the Right -->
         <div class="ml-12 flex flex-col justify-start text-left max-w-[400px]"> <!-- Margin to the left for spacing -->
             <h2 class="text-heading3">Pure Balance Box</h2>
-            <p class="  mt-2">9.800 TND</p>
+            <p class=" text-heading5 mt-2">9.800 TND</p>
 
-            <div class="mt-4">
-                <span class="text-base">Quantity</span>
-                <span class="ml-2 text-lg font-semibold">1</span>
+            <div class="mt-4 flex flex-col gap-2">
+              <span class="text-heading5">Quantity</span>
+              <div class="flex items-center gap-2  ">
+              <button class="text-button p-2">
+                <img src="../assets/icons/remove.svg" alt="Decrease Quantity"   />
+              </button>
+              <span class="text-body  ">1</span>
+              <button class="text-button p-2"></button>
+                <img src="../assets/icons/add.svg" alt="Increase Quantity"   />
+              </button>
+              </div>
             </div>
+
 
             <!-- Buttons -->
             <div class="mt-4 flex flex-col gap-4">
-              <button class="w-full h-[55px] bg-[#f17228] rounded-[8px] text-white font-semibold">
+              <button class="btn-primary">
                 ADD TO CART
               </button>
-              <button class="w-full h-[55px] bg-transparent border-2 border-[#000] rounded-[8px] text-black font-semibold">
+              <button class="btn-secondary ">
                 BUY IT NOW
               </button>
             </div>
