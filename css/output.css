@@ -607,8 +607,24 @@ strong,
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.top-6 {
+  top: 1.5rem;
 }
 
 .mx-4 {
@@ -631,6 +647,10 @@ strong,
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-8 {
@@ -659,6 +679,10 @@ strong,
 
 .ml-\[-30px\] {
   margin-left: -30px;
+}
+
+.ml-\[149px\] {
+  margin-left: 149px;
 }
 
 .mr-2 {
@@ -785,6 +809,18 @@ strong,
   width: 50%;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -833,6 +869,10 @@ strong,
   width: 40px;
 }
 
+.w-\[411px\] {
+  width: 411px;
+}
+
 .w-\[529\.32px\] {
   width: 529.32px;
 }
@@ -855,14 +895,6 @@ strong,
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .max-w-\[400px\] {
@@ -1143,6 +1175,11 @@ strong,
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1157,6 +1194,11 @@ strong,
 
 .font-semibold {
   font-weight: 600;
+}
+
+.text-\[\#6B6B6B\] {
+  --tw-text-opacity: 1;
+  color: rgb(107 107 107 / var(--tw-text-opacity, 1));
 }
 
 .text-black {
@@ -1296,6 +1338,11 @@ strong,
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   /* Black background and white text on hover */
+}
+
+.hover\:bg-orange-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-text:hover {
