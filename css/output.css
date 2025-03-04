@@ -686,6 +686,10 @@ strong,
   grid-column: span 8 / span 8;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -704,6 +708,11 @@ strong,
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .-mb-10 {
@@ -822,6 +831,10 @@ strong,
   margin-top: 2.5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -932,6 +945,10 @@ strong,
 
 .h-full {
   height: 100%;
+}
+
+.h-\[682px\] {
+  height: 682px;
 }
 
 .max-h-0 {
@@ -1108,6 +1125,10 @@ strong,
 
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1308,6 +1329,16 @@ strong,
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.object-right {
+  -o-object-position: right;
+     object-position: right;
 }
 
 .p-1 {
