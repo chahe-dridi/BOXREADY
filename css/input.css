@@ -122,6 +122,7 @@
   .progress-line {
     @apply h-1 bg-[#f17228];
   }
+ 
 }
 
 /* Toggle Switch Styles for Real-time Notifications */
@@ -137,6 +138,11 @@
   width: 0;
   height: 0;
 }
+.green-toggle:checked + .slider {
+  background-color: #1A5D1A; /* Green when ON */
+  transform: translateX(5px); /* Move slider 5px to the right */
+}
+
 
 .slider {
   position: absolute;
