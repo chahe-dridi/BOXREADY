@@ -92,25 +92,28 @@
   }
 }
 
-
-
-
 /* Custom Styles boxoverview */
 /* Primary Button */
 .btn-primary {
-    @apply   h-[55px] bg-[#f17228] rounded-[8px] text-white font-semibold transition duration-300;
+  @apply h-[55px] bg-[#f17228] rounded-[8px] text-black font-bold transition duration-300;
 }
 
 .btn-primary:hover {
-    @apply bg-[#d85d1c]; /* Darker orange on hover */
+  @apply bg-[#d85d1c]; /* Darker orange on hover */
 }
 
 /* Secondary Button */
 .btn-secondary {
-    @apply  h-[55px] bg-transparent border-2 border-[#000] rounded-[8px] text-black font-semibold transition duration-300;
+  @apply h-[55px] bg-transparent border-2 border-[#000] rounded-[8px] text-black font-bold transition duration-300;
 }
 
 .btn-secondary:hover {
-    @apply bg-[#000] text-white; /* Black background and white text on hover */
+  @apply bg-[#000] text-white; /* Black background and white text on hover */
 }
 
+.btn-black {
+  @apply h-[55px] bg-black rounded-[8px] text-white font-bold transition duration-300;
+}
+.btn-black:hover {
+  @apply bg-[#000] text-white; /* Black background and white text on hover */
+}
