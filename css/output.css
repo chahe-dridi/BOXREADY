@@ -1059,6 +1059,14 @@ strong,
   height: 54.48px;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -1217,6 +1225,22 @@ strong,
 
 .w-auto {
   width: auto;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-\[280px\] {
+  width: 280px;
+}
+
+.w-\[50px\] {
+  width: 50px;
 }
 
 .max-w-\[80\%\] {
@@ -1821,6 +1845,10 @@ strong,
   font-size: 18px;
 }
 
+.text-\[32px\] {
+  font-size: 32px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2219,6 +2247,22 @@ input:checked + .slider:before {
     height: 255px;
   }
 
+  .sm\:h-16 {
+    height: 4rem;
+  }
+
+  .sm\:h-8 {
+    height: 2rem;
+  }
+
+  .sm\:h-9 {
+    height: 2.25rem;
+  }
+
+  .sm\:h-\[68px\] {
+    height: 68px;
+  }
+
   .sm\:w-\[348px\] {
     width: 348px;
   }
@@ -2235,12 +2279,40 @@ input:checked + .slider:before {
     width: 342px;
   }
 
+  .sm\:w-16 {
+    width: 4rem;
+  }
+
+  .sm\:w-8 {
+    width: 2rem;
+  }
+
+  .sm\:w-9 {
+    width: 2.25rem;
+  }
+
+  .sm\:w-\[68px\] {
+    width: 68px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+
+  .sm\:text-\[48px\] {
+    font-size: 48px;
+  }
+
+  .sm\:text-\[56px\] {
+    font-size: 56px;
   }
 }
 
@@ -2420,6 +2492,10 @@ input:checked + .slider:before {
 
   .lg\:w-3\/4 {
     width: 75%;
+  }
+
+  .lg\:w-\[342px\] {
+    width: 342px;
   }
 
   .lg\:grid-cols-3 {
