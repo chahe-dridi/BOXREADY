@@ -45,159 +45,237 @@
    
    
     <div class="flex gap-[30px] flex-1">
-        <a href="home.html">
+        <a href="box_overview.html">
             <img src="../assets/icons/Back_Icon.svg" alt="Back Icon"/>
         </a>
     </div>
     <h1 class="text-heading1">User Posts</h1>
     
-    <div class="flex justify-center gap-4"></div>
-        <button class="p-2">
-            <img src="../assets/icons/Search_Page.svg" alt="Search" />
-        </button>
-        <button class="p-2">
-            <img src="../assets/icons/featured_cropped.svg" alt="featured_cropped" />
-        </button>
-    </div>
+   
+    <div class="mt-8 flex justify-center items-center w-full">
+      <!-- Search Bar (Centered) -->
+      <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[348px] h-[50px]">
+          <input 
+              type="text" 
+              placeholder="Search" 
+              class="pl-4 flex-1 bg-[#F8F6E9] text-black text-lg focus:outline-none h-full"
+          />
+          <button class="w-[68px] h-[68px] bg-black flex items-center justify-center">
+              <img src="../assets/icons/search.svg" alt="Search" class="w-9 h-9 invert" />
+          </button>
+      </div>
+      
+      <!-- Sort Dropdown (Right Section) -->
+      <div class="ml-8 flex items-center gap-2">
+          <span class="text-lg font-bold text-black">Sort by:</span>
+          <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[200px] h-[50px] relative">
+              <select class="flex-1 bg-[#F8F6E9] text-lg font-bold text-black px-4 focus:outline-none appearance-none">
+                  <option value="featured">FEATURED</option>
+                  <option value="popular">POPULAR</option>
+                  <option value="newest">NEWEST</option>
+                  <option value="price_low_high">PRICE: LOW TO HIGH</option>
+                  <option value="price_high_low">PRICE: HIGH TO LOW</option>
+              </select>
+              <div class="absolute right-3 pointer-events-none">
+                  <img src="../assets/icons/arrow-down.svg" alt="Dropdown Icon">
+              </div>
+          </div>
+      </div>
+  </div>
   
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Post 1 -->
+
+
+  
+  <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Post 1 -->
         <div class="flex flex-col items-center">
-            <img src="../assets/images/Our_Boxes/Box_1.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
-            <div class="flex items-center gap-2">
-                <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold mr-2">John Doe</p>
-                    <div class="flex">
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
+            <div class="post-content">
+            <div class="post-image">
+                <a href="user_posts_overview.html">
+                    <img src="../assets/images/Our_Boxes/Box_1.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
+                </a>
+         </div>
+
+            <div class="post-meta">
+                <div class="user-info flex items-center gap-2">
+                    <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                    <div class="user-name-rating flex items-center">
+                        <p class="text-lg font-semibold mr-2">John Doe</p>
+                        <div class="stars flex">
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex justify-between w-full mt-4">
-                <div class="flex items-center gap-2">
-                    <span class="text-sm">21 Likes 8 Shares</span>
-                </div>
-            </div>
-        </div>
-        <!-- Post 2 -->
-        <div class="flex flex-col items-center">
-            <img src="../assets/images/Our_Boxes/Box_2.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
-            <div class="flex items-center gap-2">
-                <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold mr-2">Jane Smith</p>
-                    <div class="flex">
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
+                <div class="engagement-info flex justify-between w-full mt-4">
+                    <div class="likes-shares flex items-center gap-2">
+                        <span class="text-sm">21 Likes</span>
+                        <span class="text-sm">8 Shares</span>
                     </div>
-                </div>
-            </div>
-            <div class="flex justify-between w-full mt-4">
-                <div class="flex items-center gap-2">
-                    <span class="text-sm">15 Likes 5 Shares</span>
-                </div>
-            </div>
-        </div>
-        <!-- Post 3 -->
-        <div class="flex flex-col items-center">
-            <img src="../assets/images/Our_Boxes/Box_3.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
-            <div class="flex items-center gap-2">
-                <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold mr-2">Alice Johnson</p>
-                    <div class="flex">
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-between w-full mt-4">
-                <div class="flex items-center gap-2">
-                    <span class="text-sm">30 Likes 12 Shares</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Post 4 -->
-        <div class="flex flex-col items-center">
-            <img src="../assets/images/Our_Boxes/Box_4.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
-            <div class="flex items-center gap-2">
-                <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold mr-2">Michael Brown</p>
-                    <div class="flex">
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
+    <!-- Post 2 -->
+    <div class="flex flex-col items-center">
+        <div class="post-content">
+            <div class="post-image">
+                <img src="../assets/images/Our_Boxes/Box_2.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
+            </div>
+            <div class="post-meta">
+                <div class="user-info flex items-center gap-2">
+                    <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                    <div class="user-name-rating flex items-center">
+                        <p class="text-lg font-semibold mr-2">Jane Smith</p>
+                        <div class="stars flex">
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex justify-between w-full mt-4">
-                <div class="flex items-center gap-2">
-                    <span class="text-sm">18 Likes 7 Shares</span>
-                </div>
-            </div>
-        </div>
-        <!-- Post 5 -->
-        <div class="flex flex-col items-center">
-            <img src="../assets/images/Our_Boxes/Box_5.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
-            <div class="flex items-center gap-2">
-                <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold mr-2">Emily Davis</p>
-                    <div class="flex">
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
+                <div class="engagement-info flex justify-between w-full mt-4">
+                    <div class="likes-shares flex items-center gap-2">
+                        <span class="text-sm">15 Likes</span>
+                        <span class="text-sm">5 Shares</span>
                     </div>
-                </div>
-            </div>
-            <div class="flex justify-between w-full mt-4">
-                <div class="flex items-center gap-2">
-                    <span class="text-sm">25 Likes 10 Shares</span>
-                </div>
-            </div>
-        </div>
-        <!-- Post 6 -->
-        <div class="flex flex-col items-center">
-            <img src="../assets/images/Our_Boxes/Box_6.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
-            <div class="flex items-center gap-2">
-                <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold mr-2">David Wilson</p>
-                    <div class="flex">
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-between w-full mt-4">
-                <div class="flex items-center gap-2">
-                    <span class="text-sm">20 Likes 9 Shares</span>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- Post 3 -->
+    <div class="flex flex-col items-center">
+        <div class="post-content">
+            <div class="post-image">
+                <img src="../assets/images/Our_Boxes/Box_3.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
+            </div>
+            <div class="post-meta">
+                <div class="user-info flex items-center gap-2">
+                    <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                    <div class="user-name-rating flex items-center">
+                        <p class="text-lg font-semibold mr-2">Alice John</p>
+                        <div class="stars flex">
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                        </div>
+                    </div>
+                </div>
+                <div class="engagement-info flex justify-between w-full mt-4">
+                    <div class="likes-shares flex items-center gap-2">
+                        <span class="text-sm">30 Likes</span>
+                        <span class="text-sm">12 Shares</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Post 4 -->
+    <div class="flex flex-col items-center">
+        <div class="post-content">
+            <div class="post-image">
+                <img src="../assets/images/Our_Boxes/Box_4.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
+            </div>
+            <div class="post-meta">
+                <div class="user-info flex items-center gap-2">
+                    <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                    <div class="user-name-rating flex items-center">
+                        <p class="text-lg font-semibold mr-2">Paul Brown</p>
+                        <div class="stars flex">
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                        </div>
+                    </div>
+                </div>
+                <div class="engagement-info flex justify-between w-full mt-4">
+                    <div class="likes-shares flex items-center gap-2">
+                        <span class="text-sm">18 Likes</span>
+                        <span class="text-sm">7 Shares</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post 5 -->
+    <div class="flex flex-col items-center">
+        <div class="post-content">
+            <div class="post-image">
+                <img src="../assets/images/Our_Boxes/Box_5.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
+            </div>
+            <div class="post-meta">
+                <div class="user-info flex items-center gap-2">
+                    <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                    <div class="user-name-rating flex items-center">
+                        <p class="text-lg font-semibold mr-2">Emily Davis</p>
+                        <div class="stars flex">
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                        </div>
+                    </div>
+                </div>
+                <div class="engagement-info flex justify-between w-full mt-4">
+                    <div class="likes-shares flex items-center gap-2">
+                        <span class="text-sm">25 Likes</span>
+                        <span class="text-sm">10 Shares</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post 6 -->
+    <div class="flex flex-col items-center">
+        <div class="post-content">
+            <div class="post-image">
+                <img src="../assets/images/Our_Boxes/Box_6.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
+            </div>
+            <div class="post-meta">
+                <div class="user-info flex items-center gap-2">
+                    <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                    <div class="user-name-rating flex items-center">
+                        <p class="text-lg font-semibold mr-2">David Wil</p>
+                        <div class="stars flex">
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                            <img src="../assets/icons/full_star.svg" alt="Star" />
+                        </div>
+                    </div>
+                </div>
+                <div class="engagement-info flex justify-between w-full mt-4">
+                    <div class="likes-shares flex items-center gap-2">
+                        <span class="text-sm">20 Likes</span>
+                        <span class="text-sm">9 Shares</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
  
 </main>
 
