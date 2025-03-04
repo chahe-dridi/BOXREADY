@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <title>Notification Details</title>
+  </head>
+  <body class="bg-background text-text font-primary">
+    <!-- Navbar -->
+    <header class="bg-primary py-4">
+      <div
+        class="max-w-container mx-auto flex justify-between items-center px-4"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img
+            src="../assets/icons/Box_Logo.svg"
+            alt="Box Logo"
+            class="w-8 h-8"
+          />
+          <p class="text-heading5 font-bold text-navText">BOXREADY</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex gap-8">
+          <a
+            href="home.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Home</a
+          >
+          <a
+            href="Our_Boxes.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Our Boxes</a
+          >
+          <a
+            href="My_Orders.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >My Orders</a
+          >
+          <a
+            href="My_Posts.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >My Posts</a
+          >
+          <a
+            href="Favorite_List.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Favorite List</a
+          >
+        </nav>
+
+        <!-- Icons (Cart & Search) -->
+        <div class="flex gap-4">
+          <button class="p-2">
+            <img
+              src="../assets/icons/search.svg"
+              alt="Search"
+              class="w-8 h-8 filter invert"
+            />
+          </button>
+          <button class="p-2">
+            <img
+              src="../assets/icons/shopping_cart.svg"
+              alt="Cart"
+              class="w-8 h-8 filter invert"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="max-w-container mx-auto text-center py-16 px-4">
+      <div class="flex items-center">
+        <div class="flex gap-[30px]">
+          <a href="Order_Tracking.html">
+            <img src="../assets/icons/Back_Icon.svg" alt="Back Icon" />
+          </a>
+        </div>
+        
+        <h1 class="text-[56px] font-bold flex-1 text-center">
+          Notification Details
+        </h1>
+      </div>
+      <div class="w-full mt-20">
+        <img class="mx-auto" src="../assets/icons/Line_2.svg" alt="" />
+      </div>
+      <section class="mt-20 w-full">
+        <div class="flex flex-col-reverse md:flex-row gap-8">
+          <ul class="text-left">
+            <li><h2 class="font-semibold">. STATUS SUMMARY :</h2></li>
+            <p class="ml-20 mt-10 text-heading3 font-semibold">
+              Your order is currently out for delivery...
+            </p>
+            <li class="mt-16">
+              <h2 class="font-semibold">. TRACKING MAP :</h2>
+            </li>
+            <p class="ml-20 mt-10 text-heading3 font-semibold">
+              Real time map sharing the delivery position :
+            </p>
+          </ul>
+          <div>
+
+            <button class="btn-primary px-8 whitespace-nowrap" onclick="location.href='Notification_History.html'">
+              CHECK HISTORY
+            </button>
+          </div>
+        </div>
+        <div class="mt-10 w-[845px] h-[421px] mx-auto">
+          <img
+            class="w-full h-full object-cover"
+            src="../assets/images/map.png"
+            alt="Map"
+          />
+        </div>
+        <div class="flex justify-center mt-8">
+          <p class="text-heading4 max-w-[490px]">
+            Delivery is heading to you in 3MIN (4KM)
+          </p>
+        </div>
+
+        <div
+          class="border-2 border-black relative my-10 p-8 flex flex-col gap-8 md:gap-0 md:flex-row items-center"
+        >
+          <div class="flex flex-col gap-6 flex-1 text-left">
+            <p class="text-heading2 font-semibold">Driver : Alex Chambers</p>
+            <p class="text-heading2 font-semibold">Phone : +99 99999999</p>
+          </div>
+          <div class="px-10">
+            <button
+              class="btn-primary w-[200px] flex items-center justify-center gap-4"
+            >
+              <img src="../assets/icons/phone.svg" alt="Phone Icon" />
+              CALL
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-footerText py-8">
+      <div class="max-w-container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4">
+        
+        <!-- BOXREADY Section (Aligned like other footer items) -->
+        <div class="text-center md:text-left">
+          <div class="flex items-center gap-2 justify-center md:justify-start">
+            <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8" />
+            <p class="text-heading5 font-bold">BOXREADY</p>
+          </div>
+        </div>
+
+        <!-- Services -->
+
+        <div class="text-center md:text-left">
+          <h3 class="text-heading5 font-bold mb-8">Services</h3>
+          <div class="flex flex-col md:items-start gap-8">
+            <a href="home.html" class="text-footerLink font-semibold hover:text-text transition">Home</a>
+            <a href="Our_Boxes.html" class="text-footerLink font-semibold hover:text-text transition">Our Boxes</a>
+            <a href="My_Orders.html" class="text-footerLink font-semibold hover:text-text transition">My Orders</a>
+            <a href="My_Posts.html" class="text-footerLink font-semibold hover:text-text transition">My Posts</a>
+            <a href="Favorite_List.html" class="text-footerLink font-semibold hover:text-text transition">Favorite List</a>
+          </div>
+        </div>  
+       
+        <!-- Follow Us -->  
+        <div class="text-center">
+          <h3 class="text-heading5 font-bold mb-8">Follow Us</h3>
+          <div class="flex flex-col md:items-start gap-10">
+            <button>
+              <img src="../assets/icons/Facebook_Icon.svg" alt="Facebook" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+            </button>
+            <button>
+              <img src="../assets/icons/Instagram_Icon.svg" alt="Instagram" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+            </button>
+            <button>
+              <img src="../assets/icons/Tiktok_Icon.svg" alt="Tiktok" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="text-center md:text-left ">
+          <h3 class="text-heading5 font-bold mb-8">Contact</h3>
+          <div class="flex flex-col md:items-start gap-10">
+            <div class="flex items-center gap-2">
+              <img src="../assets/icons/Phone_Icon.svg" alt="Phone" class="h-5 w-8 h-8" />
+              <span class="text-footerLink font-semibold">+216 70 250 000</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="../assets/icons/Mail_Icon.svg" alt="Mail" class="h-5 w-8 h-8" />
+              <span class="text-footerLink font-semibold">contact@boxready.com</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="../assets/icons/Place_Icon.svg" alt="Location" class="h-5 w-8 h-8" />
+              <span class="text-footerLink font-semibold">El Ghazala</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-excerpt text-center mt-8 font-semibold">© 2024 BoxReady. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleAccordion(index) {
+        const content = document.getElementById(`content-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+
+        // Define the paths to your arrow icons
+        const arrowDown = '../assets/icons/Fleche_2.svg'; // Icon for collapsed state
+        const arrowUp = '../assets/icons/Fleche_1.svg'; // Icon for expanded state
+
+        // Toggle the content's max-height for smooth opening and closing
+        if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+          content.style.maxHeight = '0';
+          icon.src = arrowDown; // Set to arrow-down when closing
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.src = arrowUp; // Set to arrow-up when opening
+        }
+      }
+    </script>
+  </body>
+</html>

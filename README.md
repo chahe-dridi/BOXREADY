@@ -1,46 +1,38 @@
-# BOXREADY
+# BOXREADY - UI Project
 
-## 📌 Project Overview
+🚀 **A Tailwind CSS-based UI project** for our UI class. This project follows a **utility-first CSS** approach to ensure consistency and maintainability.
 
-This project is a front-end implementation of Figma designs using **HTML, CSS, and JavaScript**. The goal is to translate the design into code while maintaining structure and reusability.
+---
 
-## 📁 Project Structure
+## 👥 Team Members & Responsibilities
 
-The project follows a structured folder system:
+- **Wassim Triki**: Worked on "box_details.html" ,"home.html" and "Notifications_Details.html" pages.
+- **Khouloud Blehadj**: Worked on "Our_Boxes.html" ,"Personalized_Search.html", "Personalized_Search_Result.html", "Box_Comparison.html" ,"Add_My_Box_Review.html" and "Modify_My_Box_Review.html" pages.
+- **Chaher Dridi**: Worked on "user_posts_overview.html" , "box_overview.html" , "users_posts.html" , "My_Posts.html" and My_Posts_Delete.html pages.
+- **Gofrane Abidi**: Worked on "Compare_Boxes.html","Notification_History.html"and "Favorite_List.html" pages.
+- **Ashref Bouden**: Worked on "Your_Cart.html", "Order_tracking.html","My_Orders.html" and "Notifications_Settings.html" pages.
 
-## 🚀 How to Get Started
+---
 
-### 1️⃣ Clone the Repository
+## ⚡️ Project Setup
+
+### 1️⃣ **Clone the Repository**
 
 ```sh
 git clone https://github.com/chahe-dridi/BOXREADY.git
-cd project-root
+cd BOXREADY
 ```
 
-### 2️⃣ Create a New Branch
-
-Before working on your page, create a feature branch:
+### 2️⃣ **Install Dependencies**
 
 ```sh
-git checkout -b feature/page-name
+npm install
 ```
 
-### 3️⃣ Implement Your Code
-
-. Add your HTML inside /pages/.
-. Add styles inside ./css/components or ./css/pages.
-. Import added file inside ./css/global.css
-
-### 4️⃣ Commit & Push Your Changes
+### 3️⃣ **Start Tailwind CSS Watch Mode**
 
 ```sh
-git add .
-git commit -m "Added homepage HTML and styles"
-git push origin feature/page-name
+npm run watch
 ```
 
-#### 🎨 CSS Guidelines
-
-- **Global styles** go inside `css/style.css`.
-- **Component-specific styles** inside `css/components/`.
-- **Page-specific styles** inside `css/pages/`.
+## 🎨 Typography & Colors (tailwind.config.js)

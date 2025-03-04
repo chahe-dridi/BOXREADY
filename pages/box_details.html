@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <title>Box Details</title>
+  </head>
+  <body class="bg-background text-text font-primary">
+    <!-- Navbar -->
+    <header class="bg-primary py-4">
+      <div
+        class="max-w-container mx-auto flex justify-between items-center px-4"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img
+            src="../assets/icons/Box_Logo.svg"
+            alt="Box Logo"
+            class="w-8 h-8"
+          />
+          <p class="text-heading5 font-bold text-navText">BOXREADY</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex gap-8">
+          <a
+            href="home.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Home</a
+          >
+          <a
+            href="Our_Boxes.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Our Boxes</a
+          >
+          <a
+            href="My_Orders.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >My Orders</a
+          >
+          <a
+            href="My_Posts.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >My Posts</a
+          >
+          <a
+            href="Favorite_List.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Favorite List</a
+          >
+        </nav>
+
+        <!-- Icons (Cart & Search) -->
+        <div class="flex gap-4">
+          <button class="p-2">
+            <img
+              src="../assets/icons/search.svg"
+              alt="Search"
+              class="w-8 h-8 filter invert"
+            />
+          </button>
+          <button class="p-2">
+            <img
+              src="../assets/icons/shopping_cart.svg"
+              alt="Cart"
+              class="w-8 h-8 filter invert"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="max-w-container mx-auto text-center py-16 px-4">
+      <div class="flex items-center">
+        <div class="flex gap-[30px]">
+          <a href="box_overview.html">
+            <img src="../assets/icons/Back_Icon.svg" alt="Back Icon" />
+          </a>
+        </div>
+        <h1 class="text-[56px] font-bold flex-1 text-center">Box Details</h1>
+      </div>
+
+      <section class="mt-20 w-full">
+        <div class="fle flex-col md:grid grid-cols-12 md:gap-4 w-full">
+          <div class="col-span-7 md:mb-0 mb-10">
+            <img
+              src="../assets/images/Our_Boxes/Box_1.png"
+              class="w-full h-auto"
+            />
+            <div class="space-y-4 mt-8">
+              <!-- Wrapper for spacing between accordions -->
+              <!-- Accordion 1 -->
+              <div class="border-sb border-t border-black py-3">
+                <button
+                  onclick="toggleAccordion(4)"
+                  class="w-full flex justify-between items-center"
+                >
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../assets/icons/ingredients.svg"
+                      alt="Ingredients Icon"
+                    />
+                    <h5 class="font-medium">Ingredients</h5>
+                  </div>
+                  <img
+                    id="icon-4"
+                    src="../assets/icons/Fleche_2.svg"
+                    alt="Toggle Icon"
+                    class="text-slate-800 transition-transform duration-300"
+                  />
+                </button>
+                <div
+                  id="content-4"
+                  class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="text-textDetails pt-2">
+                    <div class="flex items-center justify-around my-4 mx-12">
+                      <div
+                        class="inline-flex items-center w-full justify-start"
+                      >
+                        <label
+                          class="flex items-center cursor-pointer relative"
+                          for="check-1"
+                        >
+                          <input
+                            type="checkbox"
+                            checked
+                            class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-secondary checked:border-secondary"
+                            id="check-1"
+                          />
+                          <span
+                            class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-3.5 w-3.5"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              stroke="currentColor"
+                              stroke-width="1"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </span>
+                        </label>
+                        <label
+                          class="cursor-pointer text-base text-textDetails ml-2"
+                          for="check-1"
+                        >
+                          Grilled Chicken Breast
+                        </label>
+                      </div>
+
+                      <div
+                        class="inline-flex items-center w-full justify-start"
+                      >
+                        <label
+                          class="flex items-center cursor-pointer relative"
+                          for="check-2"
+                        >
+                          <input
+                            type="checkbox"
+                            checked
+                            class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-secondary checked:border-secondary"
+                            id="check-2"
+                          />
+                          <span
+                            class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-3.5 w-3.5"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              stroke="currentColor"
+                              stroke-width="1"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </span>
+                        </label>
+                        <label
+                          class="cursor-pointer text-base text-textDetails ml-2"
+                          for="check-2"
+                        >
+                          Cheddar Cheese
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center justify-around mt-8 mx-12">
+                      <div
+                        class="inline-flex items-center w-full justify-start"
+                      >
+                        <label
+                          class="flex items-center cursor-pointer relative"
+                          for="check-3"
+                        >
+                          <input
+                            type="checkbox"
+                            class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-secondary checked:border-secondary"
+                            id="check-3"
+                          />
+                          <span
+                            class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-3.5 w-3.5"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              stroke="currentColor"
+                              stroke-width="1"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </span>
+                        </label>
+                        <label
+                          class="cursor-pointer text-base text-textDetails ml-2"
+                          for="check-3"
+                        >
+                          Tuna
+                        </label>
+                      </div>
+
+                      <div
+                        class="inline-flex items-center w-full justify-start"
+                      >
+                        <label
+                          class="flex items-center cursor-pointer relative"
+                          for="check-4"
+                        >
+                          <input
+                            type="checkbox"
+                            class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-secondary checked:border-secondary"
+                            id="check-4"
+                          />
+                          <span
+                            class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-3.5 w-3.5"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              stroke="currentColor"
+                              stroke-width="1"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </span>
+                        </label>
+                        <label
+                          class="cursor-pointer text-base text-textDetails ml-2"
+                          for="check-4"
+                        >
+                          Boiled Egg
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-sb border-t border-black py-3">
+                <button
+                  onclick="toggleAccordion(5)"
+                  class="w-full flex justify-between items-center"
+                >
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../assets/icons/ruler.svg"
+                      alt="Ingredients Icon"
+                    />
+                    <h5 class="font-medium">Calories & Portions</h5>
+                  </div>
+                  <img
+                    id="icon-5"
+                    src="../assets/icons/Fleche_2.svg"
+                    alt="Calories & Portions Icon"
+                    class="text-slate-800 transition-transform duration-300"
+                  />
+                </button>
+                <div
+                  id="content-5"
+                  class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div
+                    class="text-sm text-textDetails pt-2 px-11 mt-2 space-y-6"
+                  >
+                    <!-- Pasta -->
+                    <div class="space-y-4 text-left">
+                      <h5 class="font-medium text-text">Pasta</h5>
+                      <div class="flex justify-between max-w-[80%]">
+                        <div class="inline-flex items-center">
+                          <label
+                            class="relative flex items-center cursor-pointer"
+                            for="pasta-100"
+                          >
+                            <input
+                              name="pasta"
+                              type="radio"
+                              class="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-secondary transition-all"
+                              id="pasta-100"
+                              checked
+                            />
+                            <span
+                              class="absolute bg-secondary w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                            ></span>
+                          </label>
+                          <label
+                            class="ml-2 text-textDetails cursor-pointer"
+                            for="pasta-100"
+                          >
+                            100g - 130kcal
+                          </label>
+                        </div>
+                        <div class="inline-flex items-center">
+                          <label
+                            class="relative flex items-center cursor-pointer"
+                            for="pasta-150"
+                          >
+                            <input
+                              name="pasta"
+                              type="radio"
+                              class="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-secondary transition-all"
+                              id="pasta-150"
+                            />
+                            <span
+                              class="absolute bg-secondary w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                            ></span>
+                          </label>
+                          <label
+                            class="ml-2 text-textDetails cursor-pointer"
+                            for="pasta-150"
+                          >
+                            150g - 195kcal
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Tuna -->
+                    <div class="space-y-4 text-left">
+                      <h5 class="font-medium text-text">Tuna</h5>
+                      <div class="flex justify-between max-w-[80%]">
+                        <div class="inline-flex items-center">
+                          <label
+                            class="relative flex items-center cursor-pointer"
+                            for="tuna-100"
+                          >
+                            <input
+                              name="tuna"
+                              type="radio"
+                              class="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-secondary transition-all"
+                              id="tuna-100"
+                            />
+                            <span
+                              class="absolute bg-secondary w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                            ></span>
+                          </label>
+                          <label
+                            class="ml-2 text-textDetails cursor-pointer"
+                            for="tuna-100"
+                          >
+                            100g - 120kcal
+                          </label>
+                        </div>
+                        <div class="inline-flex items-center">
+                          <label
+                            class="relative flex items-center cursor-pointer"
+                            for="tuna-150"
+                          >
+                            <input
+                              name="tuna"
+                              type="radio"
+                              class="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-secondary transition-all"
+                              id="tuna-150"
+                              checked
+                            />
+                            <span
+                              class="absolute bg-secondary w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                            ></span>
+                          </label>
+                          <label
+                            class="ml-2 text-textDetails cursor-pointer"
+                            for="tuna-150"
+                          >
+                            150g - 180kcal
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Cheddar Cheese -->
+                    <div class="space-y-4 text-left">
+                      <h5 class="font-medium text-text">Cheddar Cheese</h5>
+                      <div class="flex justify-between max-w-[80%]">
+                        <div class="inline-flex items-center">
+                          <label
+                            class="relative flex items-center cursor-pointer"
+                            for="cheese-50"
+                          >
+                            <input
+                              name="cheese"
+                              type="radio"
+                              class="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-secondary transition-all"
+                              id="cheese-50"
+                              checked
+                            />
+                            <span
+                              class="absolute bg-secondary w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                            ></span>
+                          </label>
+                          <label
+                            class="ml-2 text-textDetails cursor-pointer"
+                            for="cheese-50"
+                          >
+                            50g - 200kcal
+                          </label>
+                        </div>
+                        <div class="inline-flex items-center">
+                          <label
+                            class="relative flex items-center cursor-pointer"
+                            for="cheese-75"
+                          >
+                            <input
+                              name="cheese"
+                              type="radio"
+                              class="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-secondary transition-all"
+                              id="cheese-75"
+                            />
+                            <span
+                              class="absolute bg-secondary w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                            ></span>
+                          </label>
+                          <label
+                            class="ml-2 text-textDetails cursor-pointer"
+                            for="cheese-75"
+                          >
+                            75g - 300kcal
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center gap-7 mt-4">
+              <button class="btn-black w-64">SAVE PREFERENCE</button>
+              <a href="./Box_Comparison.html">
+                <button class="btn-secondary w-64">COMPARE</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-span-5 text-left">
+            <h3 class="text-heading3 font-semibold -mt-4">Pure Balance Box</h3>
+            <h5>TND 12.900</h5>
+            <p class="mt-2">
+              Pure Balance Box is a warm, comforting meal featuring tender
+              pasta, rich sauces, and fresh ingredients, perfect for any cozy
+              night in.
+            </p>
+            <div class="flex items-center gap-5 mt-3">
+              <button><img src="../assets/icons/remove.svg" alt="" /></button>
+              <p class="text-xl">1</p>
+              <button><img src="../assets/icons/add.svg" alt="" /></button>
+            </div>
+            <div class="flex flex-col gap-3 mt-4">
+              <button class="btn-secondary">ADD TO CART</button>
+              <button class="btn-primary">BUY IT NOW</button>
+            </div>
+            <div class="space-y-4 mt-8">
+              <!-- Wrapper for spacing between accordions -->
+              <!-- Accordion 1 -->
+              <div class="border-b border-t border-black py-3">
+                <button
+                  onclick="toggleAccordion(1)"
+                  class="w-full flex justify-between items-center"
+                >
+                  <div class="flex items-center gap-3">
+                    <img src="../assets/icons/truck.svg" alt="Shipping Icon" />
+                    <p class="">Shipping and Returns</p>
+                  </div>
+                  <img
+                    id="icon-1"
+                    src="../assets/icons/Fleche_2.svg"
+                    alt="Toggle Icon"
+                    class="text-slate-800 transition-transform duration-300"
+                  />
+                </button>
+                <div
+                  id="content-1"
+                  class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="text-sm text-textDetails pt-2">
+                    We ensure fast, reliable shipping with flexible return
+                    policies to make your shopping experience seamless.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion 2 -->
+              <div class="border-b border-black pb-3">
+                <button
+                  onclick="toggleAccordion(2)"
+                  class="w-full flex justify-between items-center"
+                >
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../assets/icons/nutritional_info.svg"
+                      alt="Payment Icon"
+                    />
+                    <p class="">Nutritional Information</p>
+                  </div>
+                  <img
+                    id="icon-2"
+                    src="../assets/icons/Fleche_2.svg"
+                    alt="Toggle Icon"
+                    class="text-slate-800 transition-transform duration-300"
+                  />
+                </button>
+                <div
+                  id="content-2"
+                  class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="text-sm text-textDetails pt-2">
+                    Our meals are carefully prepared with fresh ingredients,
+                    balanced nutrition, and detailed dietary insights.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion 3 -->
+              <div class="border-b border-black pb-3">
+                <button
+                  onclick="toggleAccordion(3)"
+                  class="w-full flex justify-between items-center"
+                >
+                  <div class="flex items-center gap-3">
+                    <img src="../assets/icons/faq.svg" alt="FAQ Icon" />
+                    <p class="">FAQs</p>
+                  </div>
+                  <img
+                    id="icon-3"
+                    src="../assets/icons/Fleche_2.svg"
+                    alt="Toggle Icon"
+                    class="text-slate-800 transition-transform duration-300"
+                  />
+                </button>
+                <div
+                  id="content-3"
+                  class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="text-sm text-textDetails pt-2">
+                    Find answers to common questions about our products,
+                    services, policies, and customer support options.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-3">
+              <button class="flex items-center gap-2">
+                <img src="../assets/icons/share.svg" alt="share" />
+                <p>Share</p>
+              </button>
+              <button class="flex items-center gap-2">
+                <img src="../assets/icons/save.svg" alt="share" />
+                <p>Save</p>
+              </button>
+              <button class="flex items-center gap-2">
+                <img src="../assets/icons/heart.svg" alt="share" />
+                <p>Favoutire</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-20">
+        <div class="flex justify-between -mb-10">
+          <h3
+            class="text-heading4 mt-4 md:text-heading3 font-semibold text-left"
+          >
+            You may also like
+          </h3>
+          <img
+            class=""
+            src="../assets/icons/Arrow Right.svg"
+            alt="Arrow Right"
+          />
+        </div>
+
+        <!-- Responsive: Stacks on small screens -->
+        <div class="flex flex-col md:flex-row justify-center gap-8 mt-6">
+          <div class="text-center">
+            <img
+              src="../assets/images/Our_Boxes/Box_4.png"
+              class="w-[342px] h-[255px] mx-auto mb-4"
+            />
+            <h3 class="text-[16px] font-semibold mb-1">Happy Turnmy Box</h3>
+            <p class="text-[16px] font-normal">7,500 TND</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="../assets/images/Our_Boxes/Box_5.png"
+              class="w-[342px] h-[255px] mx-auto mb-4"
+            />
+            <h3 class="text-[16px] font-semibold mb-1">Little Bites Box</h3>
+            <p class="text-[16px] font-normal">9,500 TND</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="../assets/images/Our_Boxes/Box_6.png"
+              class="w-[342px] h-[255px] mx-auto mb-4"
+            />
+            <h3 class="text-[16px] font-semibold mb-1">Junior Power Box</h3>
+            <p class="text-[16px] font-normal">10,900 TND</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+     <!-- Footer -->
+     <footer class="bg-primary text-footerText py-8">
+      <div class="max-w-container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4">
+        
+        <!-- BOXREADY Section (Aligned like other footer items) -->
+        <div class="text-center md:text-left">
+          <div class="flex items-center gap-2 justify-center md:justify-start">
+            <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8" />
+            <p class="text-heading5 font-bold">BOXREADY</p>
+          </div>
+        </div>
+
+        <!-- Services -->
+
+        <div class="text-center md:text-left">
+          <h3 class="text-heading5 font-bold mb-8">Services</h3>
+          <div class="flex flex-col md:items-start gap-8">
+            <a href="home.html" class="text-footerLink font-semibold hover:text-text transition">Home</a>
+            <a href="Our_Boxes.html" class="text-footerLink font-semibold hover:text-text transition">Our Boxes</a>
+            <a href="My_Orders.html" class="text-footerLink font-semibold hover:text-text transition">My Orders</a>
+            <a href="My_Posts.html" class="text-footerLink font-semibold hover:text-text transition">My Posts</a>
+            <a href="Favorite_List.html" class="text-footerLink font-semibold hover:text-text transition">Favorite List</a>
+          </div>
+        </div>  
+       
+        <!-- Follow Us -->  
+        <div class="text-center">
+          <h3 class="text-heading5 font-bold mb-8">Follow Us</h3>
+          <div class="flex flex-col md:items-start gap-10">
+            <button>
+              <img src="../assets/icons/Facebook_Icon.svg" alt="Facebook" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+            </button>
+            <button>
+              <img src="../assets/icons/Instagram_Icon.svg" alt="Instagram" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+            </button>
+            <button>
+              <img src="../assets/icons/Tiktok_Icon.svg" alt="Tiktok" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="text-center md:text-left ">
+          <h3 class="text-heading5 font-bold mb-8">Contact</h3>
+          <div class="flex flex-col md:items-start gap-10">
+            <div class="flex items-center gap-2">
+              <img src="../assets/icons/Phone_Icon.svg" alt="Phone" class="h-5 w-8 h-8" />
+              <span class="text-footerLink font-semibold">+216 70 250 000</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="../assets/icons/Mail_Icon.svg" alt="Mail" class="h-5 w-8 h-8" />
+              <span class="text-footerLink font-semibold">contact@boxready.com</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="../assets/icons/Place_Icon.svg" alt="Location" class="h-5 w-8 h-8" />
+              <span class="text-footerLink font-semibold">El Ghazala</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-excerpt text-center mt-8 font-semibold">© 2024 BoxReady. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleAccordion(index) {
+        const content = document.getElementById(`content-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+
+        // Define the paths to your arrow icons
+        const arrowDown = '../assets/icons/Fleche_2.svg'; // Icon for collapsed state
+        const arrowUp = '../assets/icons/Fleche_1.svg'; // Icon for expanded state
+
+        // Toggle the content's max-height for smooth opening and closing
+        if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+          content.style.maxHeight = '0';
+          icon.src = arrowDown; // Set to arrow-down when closing
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.src = arrowUp; // Set to arrow-up when opening
+        }
+      }
+    </script>
+  </body>
+</html>

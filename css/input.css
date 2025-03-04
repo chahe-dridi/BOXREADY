@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* ✅ Global Styles */
+@layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    @apply bg-background text-text leading-relaxed;
+  }
+
+  h1 {
+    @apply text-heading1 font-bold;
+  }
+  h2 {
+    @apply text-heading2 font-semibold;
+  }
+  h3 {
+    @apply text-heading3 font-medium;
+  }
+  h4 {
+    @apply text-heading4 font-regular;
+  }
+  h5 {
+    @apply text-heading5 font-medium;
+  }
+
+  p {
+    @apply text-body font-regular;
+  }
+
+  strong,
+  .body-emphasis {
+    @apply font-bold;
+  }
+
+  .caption {
+    @apply text-caption font-regular text-gray-500;
+  }
+
+  .excerpt {
+    @apply text-excerpt font-light text-gray-400;
+  }
+}
+
+/* ✅ Navigation */
+@layer components {
+  .nav-item {
+    @apply text-navItem font-semibold text-navText no-underline;
+  }
+  .nav-subitem {
+    @apply text-caption text-footerText no-underline;
+  }
+}
+
+/* ✅ Footer */
+@layer components {
+  .footer {
+    @apply bg-secondary text-footerText text-center p-5;
+  }
+  .footer-title {
+    @apply text-heading5 font-bold;
+  }
+  .footer-link {
+    @apply text-footerLink font-semibold text-footerText;
+  }
+  .footer-small {
+    @apply text-excerpt font-semibold text-footerText;
+  }
+}
+
+/* ✅ Page Container */
+@layer components {
+  .container {
+    @apply max-w-container mx-auto px-4;
+  }
+}
+
+/* Custom Styles boxoverview */
+/* Primary Button */
+.btn-primary {
+  @apply h-[55px] bg-[#f17228] rounded-[8px] text-black font-bold transition duration-300;
+}
+
+.btn-primary:hover {
+  @apply bg-[#d85d1c]; /* Darker orange on hover */
+}
+
+/* Secondary Button */
+.btn-secondary {
+  @apply h-[55px] bg-transparent border-2 border-[#000] rounded-[8px] text-black font-bold transition duration-300;
+}
+
+.btn-secondary:hover {
+  @apply bg-[#000] text-white; /* Black background and white text on hover */
+}
+
+.btn-black {
+  @apply h-[55px] bg-black rounded-[8px] text-white font-bold transition duration-300;
+}
+.btn-black:hover {
+  @apply bg-[#000] text-white; /* Black background and white text on hover */
+}
+/* Extend Tailwind theme with custom colors */
+
+/* Progress Tracker Styles */
+@layer components {
+  .progress-circle {
+    @apply w-12 h-12 rounded-full flex items-center justify-center text-white text-lg;
+  }
+
+  .progress-line {
+    @apply h-1 bg-[#f17228];
+  }
+ 
+}
+
+/* Toggle Switch Styles for Real-time Notifications */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.green-toggle:checked + .slider {
+  background-color: #1A5D1A; /* Green when ON */
+  transform: translateX(5px); /* Move slider 5px to the right */
+}
+
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #f17228;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

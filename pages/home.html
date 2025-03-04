@@ -3,104 +3,417 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/output.css" />
     <title>BOXREADY | HOME</title>
   </head>
-  <body>
-    <header class="navbar">
-      <div class="navbar-container">
+  <body class="bg-background text-text font-primary">
+    <!-- Navbar -->
+    <header class="bg-primary py-4">
+      <div
+        class="max-w-container mx-auto flex justify-between items-center px-4"
+      >
         <!-- Logo -->
-        <div class="navbar-logo-section">
-          <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" />
-          <p class="navbar-logo">BOXREADY</p>
+        <div class="flex items-center gap-2">
+          <img
+            src="../assets/icons/Box_Logo.svg"
+            alt="Box Logo"
+            class="w-8 h-8"
+          />
+          <p class="text-heading5 font-bold text-navText">BOXREADY</p>
         </div>
-        
+
         <!-- Navigation Links -->
-        <nav class="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Our Boxes</a>
-          <a href="#">My Orders</a>
-          <a href="#">My Posts</a>
-          <a href="#">Favorite List</a>
+        <nav class="hidden md:flex gap-8">
+          <a
+            href="home.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Home</a
+          >
+          <a
+            href="Our_Boxes.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Our Boxes</a
+          >
+          <a
+            href="My_Orders.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >My Orders</a
+          >
+          <a
+            href="My_Posts.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >My Posts</a
+          >
+          <a
+            href="Favorite_List.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Favorite List</a
+          >
         </nav>
 
         <!-- Icons (Cart & Search) -->
-        <div class="navbar-icons">
-          <button class="icon-button">
-            <img src="../assets/icons/search.svg" alt="Search" />
+        <div class="flex gap-4">
+          <button class="p-2">
+            <img
+              src="../assets/icons/search.svg"
+              alt="Search"
+              class="w-8 h-8 filter invert"
+            />
           </button>
-          <button class="icon-button">
-            <img src="../assets/icons/shopping_cart.svg" alt="Cart" />
-          </button>
+          <a href="Your_Cart.html">
+            <button class="p-2">
+              <img
+                src="../assets/icons/shopping_cart.svg"
+                alt="Cart"
+                class="w-8 h-8 filter invert"
+              />
+            </button>
+          </a>
         </div>
       </div>
     </header>
-    <main class="container">
-      <h1>Your Box, Your Meal, Your Way.</h1>
+
+    <!-- Main Section -->
+    <main class="max-w-container mx-auto text-center py-16">
+      <section class="md:grid grid-cols-12 px-16 md:px-0">
+        <div class="md:col-span-7">
+          <h1 class="text-heading1 font-bold md:text-left">
+            Your Box, Your Meal, Your Way.
+          </h1>
+          <h5 class="font-medium md:text-left mt-16">
+            Create your perfect meal with the touch of a button. We pack it, you
+            enjoy it your way, every time.
+          </h5>
+            <a href="Personalized_Search.html">
+            <button class="btn-primary px-5 mt-10">PERSONALIZED SEARCH</button>
+            </a> 
+        </div>
+        <div class="col-span-5 md:block hidden">
+          <img src="../assets/images/home.png" alt="Home image" srcset="" />
+        </div>
+      </section>
+      <section class="text-center mt-20">
+        <h3 class="font-semibold">_Popular Boxes_</h3>
+        <h5 class="font-medium mt-10">
+          Fresh, locally sourced ingredients for a flavorful and sustainable
+          experience
+        </h5>
+        <div class="flex flex-col md:flex-row gap-8 mt-16">
+          <div class="text-center">
+            <img
+              src="../assets/images/Our_Boxes/Box_1.png"
+              class="w-[342px] h-[255px] mx-auto mb-[36px]"
+            />
+            <h3 class="text-[16px] font-semibold mb-[19px]">
+              Pure Balance Box
+            </h3>
+            <p class="text-[16px] font-normal">9,800 TND</p>
+            <a href="./box_details.html">
+              <button class="btn-primary px-10 mt-4">BOX DETAILS</button>
+            </a>
+          </div>
+          <div class="text-center">
+            <img
+              src="../assets/images/Our_Boxes/Box_2.png"
+              class="w-[342px] h-[255px] mx-auto mb-[36px]"
+            />
+            <h3 class="text-[16px] font-semibold mb-[19px]">Smart Fuel Box</h3>
+            <p class="text-[16px] font-normal">12,500 TND</p>
+            <a href="./box_details.html">
+              <button class="btn-primary px-10 mt-4">BOX DETAILS</button>
+            </a>
+          </div>
+          <div class="text-center">
+            <img
+              src="../assets/images/Our_Boxes/Box_3.png"
+              class="w-[342px] h-[255px] mx-auto mb-[36px]"
+            />
+            <h3 class="text-[16px] font-semibold mb-[19px]">
+              Wellness Fuel Box
+            </h3>
+            <p class="text-[16px] font-normal">7,900 TND</p>
+            <a href="./box_details.html">
+              <button class="btn-primary px-10 mt-4">BOX DETAILS</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="mt-20">
+        <div class="bg-primary flex flex-col-reverse md:flex-row">
+          <div class="flex-1 p-16 md:p-20 md:pr-0">
+            <h2 class="font-semibold text-white md:text-left">
+              Get Up To 50% Off On Your First Two Orders Now!
+            </h2>
+            <a href="Our_Boxes.html">
+              <button class="btn-primary px-10 mt-8">OUR BOXES</button>
+            </a> 
+          </div>
+          <div class="flex-1 p-10">
+            <img
+              class="w-full h-full object-cover"
+              src="../assets/images/banner.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="text-center mt-24">
+        <h3 class="font-semibold">_Who We Are_</h3>
+        <div
+          class="bg-primary flex flex-col-reverse md:grid overflow-hidden mt-10 grid-cols-3 h-[682px]"
+        >
+          <p class="text-white text-xl font-medium my-auto px-8 text-left">
+            BoxReady is an innovative platform that allows users to order
+            balanced, ready-to-eat meals, delivered in convenient boxes tailored
+            to their daily needs. Designed to simplify life, BoxReady offers
+            delicious and nutritious meals, carefully prepared to provide a
+            quick and healthy solution for those looking to eat well without
+            hassle. Whether it’s for a lunch at the office, a balanced dinner,
+            or a meal on the go, our boxes are designed to fit seamlessly into
+            your daily routine.
+          </p>
+          <div class="col-span-2">
+            <img
+              class="w-full h-full object-cover object-right"
+              src="../assets/images/whoweare.jpg"
+              alt="Who We Are"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="text-center mt-24">
+        <h3 class="font-semibold mb-24">_How Does It Work_</h3>
+        <div class="flex flex-col md:flex-row gap-4">
+          <!-- Box 1 -->
+          <div
+            class="bg-primary relative text-white h-[319px] px-8 rounded-[48px] flex gap-4 justify-center flex-col"
+          >
+            <div
+              class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black w-[115px] h-[107px] rounded-[24px] flex items-center justify-center"
+            >
+              <img
+                src="../assets/icons/recycle_bin.svg"
+                alt="delete Icon"
+                class="invert brightness-0"
+              />
+            </div>
+            <h3 class="font-semibold text-2xl">Choose your Box</h3>
+            <p class="text-left">
+              Browse our selection of balanced, ready-to-eat meal boxes and pick
+              the one that best suits your needs.
+            </p>
+          </div>
+
+          <!-- Box 2 -->
+          <div
+            class="bg-primary relative text-white h-[319px] px-8 rounded-[48px] flex gap-4 justify-center flex-col"
+          >
+            <div
+              class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black w-[115px] h-[107px] rounded-[24px] flex items-center justify-center"
+            >
+              <img
+                src="../assets/icons/truck.svg"
+                alt="delete Icon"
+                class="invert brightness-0"
+              />
+            </div>
+            <h3 class="font-semibold text-2xl">Place Your Order</h3>
+            <p class="text-left">
+              Customize your order, select your preferred delivery time and
+              complete your purchase in just a few clicks.
+            </p>
+          </div>
+
+          <!-- Box 3 -->
+          <div
+            class="bg-primary relative text-white h-[319px] px-8 rounded-[48px] flex gap-4 justify-center flex-col"
+          >
+            <div
+              class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black w-[115px] h-[107px] rounded-[24px] flex items-center justify-center"
+            >
+              <img
+                src="../assets/icons/meal.svg"
+                alt="delete Icon"
+                class="invert brightness-0"
+              />
+            </div>
+            <h3 class="font-semibold text-2xl">Enjoy Your Meal</h3>
+            <p class="text-left">
+              Receive your meal box at your doorstep, ready to eat. Just unpack,
+              enjoy and stay nourished.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+    <section class="text-center mt-24 overflow-hidden">
+      <h3 class="font-semibold mb-24">_What Our Customers Say_</h3>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- BOXREADY Section -->
-        <div class="footer-logo-section">
-          <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" />
-          <p class="footer-logo">BOXREADY</p>
+      <!-- Carousel Container -->
+      <div
+        class="relative flex justify-center items-center gap-[50px] max-w-[1200px] w-full mx-auto"
+      >
+        <!-- Left Card (30% visible, smaller, positioned higher) -->
+        <div
+          class="absolute left-[-50%] top-[-12%] bg-white text-text rounded-[24px] shadow-xl flex flex-col gap-6 justify-center items-center h-[520px] w-[680px] px-8 scale-95"
+        >
+          <p class="font-medium text-[24px] text-left">
+            "I love how fresh everything is! The portions are perfect, and I
+            never have to worry about meal prep."
+          </p>
+          <h4>Sarah M</h4>
         </div>
-    
-        <!-- Services Section -->
-        <div class="footer-section">
-          <div class="footer-title">Services</div>
-          <div class="footer-links">
-            <a href="#">Home</a>
-            <a href="#">Our Boxes</a>
-            <a href="#">My Orders</a>
-            <a href="#">My Posts</a>
-            <a href="#">Favorite List</a>
+
+        <!-- Center Card (Main focus, original size) -->
+        <div
+          class="bg-white text-text rounded-[24px] shadow-2xl flex flex-col gap-10 justify-center items-center h-[490px] w-[795px] px-10 z-10"
+        >
+          <p class="font-medium text-[28px] text-left">
+            "The food is incredible! Every box feels like I’ve ordered from a
+            top-tier restaurant. My favorites are the pasta dishes and the
+            desserts!"
+          </p>
+          <h4>Ryan S</h4>
+        </div>
+
+        <!-- Right Card (30% visible, smaller, positioned higher) -->
+        <div
+          class="absolute right-[-50%] top-[-12%] bg-white text-text rounded-[24px] shadow-xl flex flex-col gap-6 justify-center items-center h-[520px] w-[680px] px-8 scale-95"
+        >
+          <p class="font-medium text-[24px] text-left">
+            "Super easy to order, great variety, and I can feel the quality in
+            every bite. Highly recommend!"
+          </p>
+          <h4>Mark T</h4>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="flex gap-5 justify-center mt-5">
+        <button>
+          <img src="../assets/icons/Arrow Left.svg" alt="Previous" />
+        </button>
+        <button>
+          <img src="../assets/icons/Arrow Right.svg" alt="Next" />
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-footerText py-8">
+      <div
+        class="max-w-container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4"
+      >
+        <!-- BOXREADY Section (Aligned like other footer items) -->
+        <div class="text-center md:text-left">
+          <div class="flex items-center gap-2 justify-center md:justify-start">
+            <img
+              src="../assets/icons/Box_Logo.svg"
+              alt="Box Logo"
+              class="w-8 h-8"
+            />
+            <p class="text-heading5 font-bold">BOXREADY</p>
           </div>
         </div>
-    
-        <!-- Follow Us Section -->
-        <div class="footer-section">
-          <div class="footer-title">Follow Us</div>
-          <div class="social-icons">
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Facebook_Icon.svg" alt="Facebook" />
+
+        <!-- Services -->
+
+        <div class="text-center md:text-left">
+          <h3 class="text-heading5 font-bold mb-8">Services</h3>
+          <div class="flex flex-col md:items-start gap-8">
+            <a
+              href="home.html"
+              class="text-footerLink font-semibold hover:text-text transition"
+              >Home</a
+            >
+            <a
+              href="Our_Boxes.html"
+              class="text-footerLink font-semibold hover:text-text transition"
+              >Our Boxes</a
+            >
+            <a
+              href="My_Orders.html"
+              class="text-footerLink font-semibold hover:text-text transition"
+              >My Orders</a
+            >
+            <a
+              href="My_Posts.html"
+              class="text-footerLink font-semibold hover:text-text transition"
+              >My Posts</a
+            >
+            <a
+              href="Favorite_List.html"
+              class="text-footerLink font-semibold hover:text-text transition"
+              >Favorite List</a
+            >
+          </div>
+        </div>
+
+        <!-- Follow Us -->
+        <div class="text-center">
+          <h3 class="text-heading5 font-bold mb-8">Follow Us</h3>
+          <div class="flex flex-col md:items-start gap-10">
+            <button>
+              <img
+                src="../assets/icons/Facebook_Icon.svg"
+                alt="Facebook"
+                class="h-6 mx-auto hover:opacity-70 w-8 h-8"
+              />
             </button>
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Instagram_Icon.svg" alt="Instagram" />
+            <button>
+              <img
+                src="../assets/icons/Instagram_Icon.svg"
+                alt="Instagram"
+                class="h-6 mx-auto hover:opacity-70 w-8 h-8"
+              />
             </button>
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Tiktok_Icon.svg" alt="Tiktok" />
+            <button>
+              <img
+                src="../assets/icons/Tiktok_Icon.svg"
+                alt="Tiktok"
+                class="h-6 mx-auto hover:opacity-70 w-8 h-8"
+              />
             </button>
           </div>
         </div>
-    
-        <!-- Contact Section -->
-        <div class="footer-section">
-          <div class="footer-title">Contact</div>
-          <div class="contact-details">
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Phone_Icon.svg" alt="Phone" />
-            </button>
-            <div class="footer-link">(216) 70 250 000</div>
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Mail_Icon.svg" alt="Mail" />
-            </button>
-            <div class="footer-link">contact@boxready.com</div>
-            <button class="icon-button-footer">
-              <img src="../assets/icons/Place_Icon.svg" alt="Place" />
-            </button>
-            <div class="footer-link">El Ghazala</div>
+
+        <!-- Contact -->
+        <div class="text-center md:text-left">
+          <h3 class="text-heading5 font-bold mb-8">Contact</h3>
+          <div class="flex flex-col md:items-start gap-10">
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/icons/Phone_Icon.svg"
+                alt="Phone"
+                class="h-5 w-8 h-8"
+              />
+              <span class="text-footerLink font-semibold">+216 70 250 000</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/icons/Mail_Icon.svg"
+                alt="Mail"
+                class="h-5 w-8 h-8"
+              />
+              <span class="text-footerLink font-semibold"
+                >contact@boxready.com</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/icons/Place_Icon.svg"
+                alt="Location"
+                class="h-5 w-8 h-8"
+              />
+              <span class="text-footerLink font-semibold">El Ghazala</span>
+            </div>
           </div>
         </div>
       </div>
-    
-      <div class="footer-small">
+
+      <p class="text-excerpt text-center mt-8 font-semibold">
         © 2024 BoxReady. All rights reserved.
-      </div>
+      </p>
     </footer>
-    
-
   </body>
 </html>
-
