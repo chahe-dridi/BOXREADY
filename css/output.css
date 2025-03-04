@@ -1114,6 +1114,10 @@ strong,
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1301,6 +1305,11 @@ strong,
   background-color: rgb(241 114 40 / var(--tw-bg-opacity, 1));
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1311,6 +1320,22 @@ strong,
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .px-11 {
@@ -1393,6 +1418,10 @@ strong,
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pr-0 {
+  padding-right: 0px;
 }
 
 .text-left {
@@ -1916,8 +1945,16 @@ input:checked + .slider:before {
     justify-content: flex-start;
   }
 
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:pr-0 {
     padding-right: 0px;
   }
 
