@@ -45,160 +45,198 @@
    
    
     <div class="flex gap-[30px] flex-1">
-        <a href="home.html">
+        <a href="Our_Boxes.html">
             <img src="../assets/icons/Back_Icon.svg" alt="Back Icon"/>
         </a>
     </div>
     <h1 class="text-heading1">Box Overview</h1>
 
-    <div class="flex mt-20 justify-center items-start">
-        <!-- Box Image -->
-        <div> <!-- Margin adjusted for proper spacing -->
-          <img src="../assets/images/Our_Boxes/Box_1.png" class="w-[610px] h-[568px] mb-8" alt="Box Image" />
+    <div class="flex mt-20 justify-center items-start mb-8 flex-col md:flex-row">
+      <!-- Box Image -->
+      <div class="mb-8 md:mb-0"> <!-- Margin adjusted for proper spacing -->
+          <img src="../assets/images/Our_Boxes/Box_1.png" class="w-[610px] h-[568px] mb-8 mx-auto md:mx-0" alt="Box Image" />
+          
           <!-- New Buttons -->
-          <div class="mt-4 relative flex gap-4">
-            <button class="btn-primary w-1/2">MORE DETAILS</button>
-            <button class="btn-secondary  w-1/2">USER POSTS</button>
+          <div class="mt-4 relative flex gap-4 flex-col md:flex-row">
+               
+              <a href="box_details.html" class="w-full md:w-1/2">
+                <button class="btn-primary w-full">MORE DETAILS</button>
+            </a>
+              <a href="users_posts.html" class="w-full md:w-1/2">
+                  <button class="btn-secondary w-full">USER POSTS</button>
+              </a>
           </div>
-      </div> 
-      
-
-        <!-- Box Details on the Right -->
-        <div class="ml-12 flex flex-col justify-start text-left max-w-[400px]"> <!-- Margin to the left for spacing -->
-            <h2 class="text-heading3">Pure Balance Box</h2>
-            <p class=" text-heading5 mt-2">9.800 TND</p>
-
+      </div>
+  
+      <!-- Box Details on the Right -->
+      <div class="ml-0 md:ml-12 flex flex-col justify-start text-left max-w-full md:max-w-[400px]">
+          <h3 class="text-heading3">Pure Balance Box</h3>
+          <h5 class="text-heading5 mt-2">9.800 TND</h5>
+  
             <div class="mt-4 flex flex-col gap-2">
-              <span class="text-heading5">Quantity</span>
-              <div class="flex items-center gap-2  ">
-              <button class="text-button p-2">
-                <img src="../assets/icons/remove.svg" alt="Decrease Quantity"   />
-              </button>
-              <span class="text-body  ">1</span>
-              <button class="text-button p-2"></button>
-                <img src="../assets/icons/add.svg" alt="Increase Quantity"   />
-              </button>
+              <h5 class="text-heading5">Quantity</h5>
+              <div class="flex items-center gap-2">
+                <button class="text-button p-2" onclick="decreaseQuantity()">
+                  <img src="../assets/icons/remove.svg" alt="Decrease Quantity" />
+                </button>
+                <span id="quantity" class="text-body">1</span>
+                <button class="text-button p-2" onclick="increaseQuantity()">
+                  <img src="../assets/icons/add.svg" alt="Increase Quantity" />
+                </button>
               </div>
             </div>
 
+            <script>
+              function increaseQuantity() {
+                const quantityElement = document.getElementById('quantity');
+                let quantity = parseInt(quantityElement.textContent);
+                quantityElement.textContent = quantity + 1;
+              }
 
-            <!-- Buttons -->
-            <div class="mt-4 flex flex-col gap-4">
-              <button class="btn-primary">
-                ADD TO CART
-              </button>
-              <button class="btn-secondary ">
-                BUY IT NOW
-              </button>
-            </div>
-
-            <!-- Product Description -->
-            <p class="mt-4 text-base w-full max-w-[400px]">
-              Enjoy guilt-free, nutrient-packed snacks with the Pure Balance Box, perfect for a balanced lifestyle.
+              function decreaseQuantity() {
+                const quantityElement = document.getElementById('quantity');
+                let quantity = parseInt(quantityElement.textContent);
+                if (quantity > 1) {
+                  quantityElement.textContent = quantity - 1;
+                }
+              }
+            </script>
+  
+          <!-- Buttons -->
+          <div class="mt-4 flex flex-col gap-4">
+              <button class="btn-primary w-full">ADD TO CART</button>
+              <button class="btn-secondary w-full">BUY IT NOW</button>
+          </div>
+  
+          <!-- Product Description -->
+          <p class="mt-4 text-body w-full max-w-full md:max-w-[400px]">
+              Enjoy guilt-free, nutrient-packed snacks with the Pure Balance Box, perfect for a balanced lifestyle. 
               Made with high-quality ingredients, it's tasty, nutritious, and conveniently ready to enjoy.
-            </p>
-
-            <!-- Line Separator -->
-            <div class="flex items-center gap-2 cursor-pointer mt-5">
-                <img src="../assets/icons/Line_2.svg" class="w-[407px] h-[24px]" />
-            </div>
-
-            <!-- Actions: Save, Share, Favourite -->
-            <div class="flex justify-between w-full mt-6">
-                <div class="flex items-center gap-2 cursor-pointer">
-                    <img src="../assets/icons/save.svg" class="w-[24px] h-[24px]" />
-                    <span class="text-[20px]">Save</span>
-                </div>
-                <div class="flex items-center gap-2 cursor-pointer">
-                    <img src="../assets/icons/share.svg" class="w-[24px] h-[24px]" />
-                    <span class="text-[20px]">Share</span>
-                </div>
-                <div class="flex items-center gap-2 cursor-pointer">
-                    <img src="../assets/icons/heart.svg" class="w-[24px] h-[24px]" />
-                    <span class="text-[20px]">Favourite</span>
-                </div>
-            </div>
-        </div>
-    </div>
+          </p>
+  
+          <!-- Line Separator -->
+          <div class="flex items-center gap-2 cursor-pointer mt-5">
+              <img src="../assets/icons/Line_2.svg" class="w-[407px] h-[24px]" />
+          </div>
+  
+          <!-- Actions: Save, Share, Favourite -->
+          <div class="flex justify-between w-full mt-6">
+            <div class="flex items-center gap-2 cursor-pointer">
+              <img src="../assets/icons/share.svg" class="w-[24px] h-[24px]" />
+              <span class="text-[20px]">Share</span>
+          </div>
+              <div class="flex items-center gap-2 cursor-pointer">
+                  <img src="../assets/icons/save.svg" class="w-[24px] h-[24px]" />
+                  <span class="text-[20px]">Save</span>
+              </div>
+            
+              <div class="flex items-center gap-2 cursor-pointer">
+                  <img src="../assets/icons/heart.svg" class="w-[24px] h-[24px]" />
+                  <span class="text-[20px]">Favourite</span>
+              </div>
+          </div>
+      </div>
+  </div>
+  
 
      
     
     <h3 class="text-heading3 text-left ">Users posts</h3>
 
     <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Post 1 -->
-        <div class="flex flex-col items-center">
-            <img src="../assets/images/Our_Boxes/Box_1.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
-            <div class="flex items-center gap-2">
-                <img src="../assets/icons/Profile_Picture.svg"  alt="Profile Picture" />
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold mr-2">John Doe</p>
-                    <div class="flex">
-                        <img src="../assets/icons/full_star.svg"   alt="Star" />
-                        <img src="../assets/icons/full_star.svg"   alt="Star" />
-                        <img src="../assets/icons/full_star.svg"   alt="Star" />
-                        <img src="../assets/icons/full_star.svg"   alt="Star" />
-                        <img src="../assets/icons/full_star.svg" alt="Star" />
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-between w-full mt-4">
-                <div class="flex items-center gap-2">
-                     <span class="text-sm">21 Likes 8 Shares</span>
-                </div>
-               
-            </div>
-        </div>
-
-        <!-- Post 2 -->
-        <div class="flex flex-col items-center">
-            <img src="../assets/images/Our_Boxes/Box_2.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
-            <div class="flex items-center gap-2">
-                <img src="../assets/icons/Profile_Picture.svg"  alt="Profile Picture" />
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold mr-2">Adam Clark</p>
-                    <div class="flex">
-                        <img src="../assets/icons/full_star.svg"   alt="Star" />
-                        <img src="../assets/icons/full_star.svg"  alt="Star" />
-                        <img src="../assets/icons/full_star.svg"   alt="Star" />
-                        <img src="../assets/icons/full_star.svg"  alt="Star" />
-                        <img src="../assets/icons/full_star.svg"    alt="Star" />
-                    </div>
-                </div>
-                
-            </div>
-            <div class="flex justify-between w-full mt-4">
-                <div class="flex items-center gap-2">
-                     <span class="text-sm">29 Likes 2 Shares</span>
-                </div>
-                
-            </div>
-        </div>
-
-        <!-- Post 3 -->
-        <div class="flex flex-col items-center">
-            <img src="../assets/images/Our_Boxes/Box_3.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
-            <div class="flex items-center gap-2">
-                <img src="../assets/icons/Profile_Picture.svg"  alt="Profile Picture" />
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold mr-2">Emma Hall</p>
-                    <div class="flex">
-                        <img src="../assets/icons/full_star.svg"   alt="Star" />
-                        <img src="../assets/icons/full_star.svg"   alt="Star" />
-                        <img src="../assets/icons/full_star.svg"    alt="Star" />
-                        <img src="../assets/icons/full_star.svg"   alt="Star" />
-                        <img src="../assets/icons/full_star.svg"   alt="Star" />
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-between w-full mt-4">
-                <div class="flex items-center gap-2">
-                     <span class="text-sm">31 Likes 18 Shares</span>
-                </div>
-               
-            </div>
-        </div>
-    </div>
+      <!-- Post 4 -->
+      <div class="flex flex-col items-center">
+          <div class="post-content">
+              <div class="post-image">
+                  <img src="../assets/images/Our_Boxes/Box_4.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
+              </div>
+              <div class="post-meta">
+                  <div class="user-info flex items-center gap-2">
+                      <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                      <div class="user-name-rating flex items-center">
+                          <p class="text-lg font-semibold mr-2">Paul Brown</p>
+                          <div class="stars flex">
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                          </div>
+                      </div>
+                  </div>
+                  <div class="engagement-info flex justify-between w-full mt-4">
+                      <div class="likes-shares flex items-center gap-2">
+                          <span class="text-sm">18 Likes</span>
+                          <span class="text-sm">7 Shares</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Post 5 -->
+      <div class="flex flex-col items-center">
+          <div class="post-content">
+              <div class="post-image">
+                  <img src="../assets/images/Our_Boxes/Box_5.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
+              </div>
+              <div class="post-meta">
+                  <div class="user-info flex items-center gap-2">
+                      <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                      <div class="user-name-rating flex items-center">
+                          <p class="text-lg font-semibold mr-2">Emily Davis</p>
+                          <div class="stars flex">
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                          </div>
+                      </div>
+                  </div>
+                  <div class="engagement-info flex justify-between w-full mt-4">
+                      <div class="likes-shares flex items-center gap-2">
+                          <span class="text-sm">25 Likes</span>
+                          <span class="text-sm">10 Shares</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Post 6 -->
+      <div class="flex flex-col items-center">
+          <div class="post-content">
+              <div class="post-image">
+                  <img src="../assets/images/Our_Boxes/Box_6.png" class="w-[342px] h-[255px] mb-4" alt="Box Image" />
+              </div>
+              <div class="post-meta">
+                  <div class="user-info flex items-center gap-2">
+                      <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                      <div class="user-name-rating flex items-center">
+                          <p class="text-lg font-semibold mr-2">David Wil</p>
+                          <div class="stars flex">
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                              <img src="../assets/icons/full_star.svg" alt="Star" />
+                          </div>
+                      </div>
+                  </div>
+                  <div class="engagement-info flex justify-between w-full mt-4">
+                      <div class="likes-shares flex items-center gap-2">
+                          <span class="text-sm">20 Likes</span>
+                          <span class="text-sm">9 Shares</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  
+  
 </main>
 
 

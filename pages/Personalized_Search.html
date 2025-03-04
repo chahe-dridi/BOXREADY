@@ -47,19 +47,44 @@
         </a>
     </div>
       <h1 class="text-[56px] font-bold">Personalized Search</h1>
-      <div class="mt-8 justify-center flex gap-4">
-        <img src="../assets/icons/Search_Page.svg" alt="Search"  />
-        <p class="text-black">Sort By:</p>
-        <img src="../assets/icons/Sort.svg" alt="Sort"  />
-    </div>   
+      <div class="mt-8 flex justify-center items-center w-full">
+        <!-- Search Bar (Centered) -->
+        <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[348px] h-[50px]">
+            <input 
+                type="text" 
+                placeholder="Search" 
+                class="pl-4 flex-1 bg-[#F8F6E9] text-black text-lg focus:outline-none h-full"
+            />
+            <button class="w-[68px] h-[68px] bg-black flex items-center justify-center">
+                <img src="../assets/icons/search.svg" alt="Search" class="w-9 h-9 invert" />
+            </button>
+        </div>
+        
+        <!-- Sort Dropdown (Right Section) -->
+        <div class="ml-8 flex items-center gap-2">
+          <span class="text-lg font-medium text-black">Sort By :</span>
+          <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[200px] h-[50px] relative">
+                <select class="flex-1 bg-[#F8F6E9] text-lg font-bold text-black px-4 focus:outline-none appearance-none">
+                    <option value="featured">Featured</option>
+                    <option value="popular">POPULAR</option>
+                    <option value="newest">NEWEST</option>
+                    <option value="price_low_high">PRICE: LOW TO HIGH</option>
+                    <option value="price_high_low">PRICE: HIGH TO LOW</option>
+                </select>
+                <div class="absolute right-3 pointer-events-none">
+                    <img src="../assets/icons/arrow-down.svg" alt="Dropdown Icon">
+                </div>
+            </div>
+        </div>
+    </div> 
       
 <section class="mt-20 ">
   <!--Sidebar-->
   <div class="w-1/4">
     <img src="../assets/icons/Line.svg" alt="Line"  />
     <div class="mb-6 flex items-center justify-between">
-      <h3 class="text-[16px] font-semibold">Category</h3>
-      <img src="../assets/icons/Fleche_1.svg" alt="Fleche_1" class="ml-[149px]" />
+      <h3 class="text-[16px] font-semibold whitespace-nowrap">Category</h3>
+      <img src="../assets/icons/Fleche_1.svg" alt="Fleche_1" class="ml-[80px]" />
     </div>
     <a href="Personalized_Search_Result.html">
     <div class="flex items-center gap-2">
@@ -104,35 +129,30 @@
       <img src="../assets/icons/Check_Box.svg" alt="check_box" />
       <p class="text-[#6B6B6B]">Weight Loss Boxes</p>
     </div>
-
+<br>
 
         <img src="../assets/icons/Line.svg" alt="Line"  />
         <div class="mb-6 flex items-center justify-between">
-          <h3 class="text-[16px] font-semibold">Meal Type</h3>
-          <img src="../assets/icons/Fleche_2.svg" alt="Fleche_2" class="ml-[149px]" />
+          <h3 class="text-[16px] font-semibold whitespace-nowrap">Meal Type</h3>
+          <img src="../assets/icons/Fleche_2.svg" alt="Fleche_2" class="ml-[80px]" />
         </div>    
         
         <img src="../assets/icons/Line.svg" alt="Line"  />
 
         <div class="mb-6 flex items-center justify-between">
-          <h3 class="text-[16px] font-semibold">Mood & Occasion</h3>
-          <img src="../assets/icons/Fleche_2.svg" alt="Fleche_2" class="ml-[149px]" />
+          <h3 class="text-[16px] font-semibold whitespace-nowrap">Mood & Occasion</h3>
+          <img src="../assets/icons/Fleche_2.svg" alt="Fleche_2" class="ml-[80px]" />
         </div> 
 
         <img src="../assets/icons/Line.svg" alt="Line"  />
         <div class="mb-6 flex items-center justify-between">
-        <h3 class="text-[16px] font-semibold mb-[19px] md:text-left">Cuisine & Origin</h3>
-        <img src="../assets/icons/Fleche_2.svg" alt="Fleche_2" class="ml-[149px]" />
+        <h3 class="text-[16px] font-semibold whitespace-nowrap">Cuisine & Origin</h3>
+        <img src="../assets/icons/Fleche_2.svg" alt="Fleche_2" class="ml-[80px]" />
         </div>
         
       </div>
-  <!--Search-->
-
-  <div class=" w-3/4 flex flex-col items-end">
-    <img src="../assets/icons/Personalized_Seach_Icon.svg" alt="Personalized Search Icon" />
-    <p class="text-[#6B6B6B]">Start searching to see results</p>
-  </div>
-  <br>
+<br><br><br>
+  
   <!--Popular-->
   <img src="../assets/icons/Line.svg" alt="Line"  />
   <h3 class="text-[16px] font-semibold mb-[19px] md:text-left">Popular Right Now</h3>

@@ -40,23 +40,144 @@
     </header>
 
     <!-- Main Section -->
-          <main class="max-w-container mx-auto text-center py-16 px-4">
-            
-     <div class="flex gap-[30px] flex-1">
-          <a href="home.html">
-              <img src="../assets/icons/Back_Icon.svg" alt="Back Icon"/>
-          </a>
+    <main class="max-w-container mx-auto text-center py-16 px-4">
+      <div class="flex gap-[30px] flex-1">
+        <a href="home.html">
+          <img src="../assets/icons/Back_Icon.svg" alt="Back Icon"/>
+        </a>
       </div>
       <h1 class="text-heading1">My posts</h1>
+    
+      <div class="mt-8 flex justify-center items-center w-full">
+        <!-- Search Bar (Centered) -->
+        <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[348px] h-[50px]">
+            <input 
+                type="text" 
+                placeholder="Search" 
+                class="pl-4 flex-1 bg-[#F8F6E9] text-black text-lg focus:outline-none h-full"
+            />
+            <a href="users_posts.html" class="w-[68px] h-[68px] bg-black flex items-center justify-center">
+              <img src="../assets/icons/search.svg" alt="Search" class="w-9 h-9 invert" />
+            </a>
+        </div>
+        
+       <!-- Sort Dropdown (Right Section) -->
+       <div class="ml-8 flex items-center gap-2">
+        <span class="text-lg font-medium text-black">Sort By :</span>
+        <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[200px] h-[50px] relative">
+            <select class="flex-1 bg-[#F8F6E9] text-lg font-bold text-black px-4 focus:outline-none appearance-none">
+                <option value="featured">Featured</option>
+                <option value="popular">POPULAR</option>
+                <option value="newest">NEWEST</option>
+                <option value="price_low_high">PRICE: LOW TO HIGH</option>
+                <option value="price_high_low">PRICE: HIGH TO LOW</option>
+            </select>
+            <div class="absolute right-3 pointer-events-none">
+                <img src="../assets/icons/arrow-down.svg" alt="Dropdown Icon">
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+      <!-- Posts Section -->
+      <section class="mt-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center">
+          <!-- Post 1 -->
+          <div class="flex flex-col items-center w-[342px]">
+            <a href="user_posts_overview.html">
+              <img src="../assets/images/Our_Boxes/Box_1.png" class="w-full h-[255px] mb-4" alt="Box Image" />
+            </a>
+            <div class="flex items-center justify-between w-full">
+              <div class="flex items-center gap-2">
+                <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                <p class="text-lg font-semibold">John Doe</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <a href="Modify_My_Box_Review.html">
+                  <button class="p-1">
+                  <img src="../assets/icons/edit.svg" alt="Edit" class="w-5 h-5" />
+                  </button>
+                </a>
+                <a href="My_Posts_Delete.html"> 
+                  <button class="p-1">
+                    <img src="../assets/icons/delete.svg" alt="Delete" class="w-5 h-5" />
+                  </button>
+                </a>
 
-
-   
-                
-          <section class="mt-20">
-
-
-          </section>
-      </main>  
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <img src="../assets/icons/full_star.svg" alt="Star" />
+              <img src="../assets/icons/full_star.svg" alt="Star" />
+              <img src="../assets/icons/full_star.svg" alt="Star" />
+              <img src="../assets/icons/half_star.svg" alt="Star" />
+              <img src="../assets/icons/empty_star.svg" alt="Star" />
+          <span class="text-sm ml-2">21 Likes 8 Shares</span>
+            </div>
+          </div>
+    
+          <!-- Post 2 -->
+          <div class="flex flex-col items-center w-[342px]">
+            <img src="../assets/images/Our_Boxes/Box_2.png" class="w-full h-[255px] mb-4" alt="Box Image" />
+            <div class="flex items-center justify-between w-full">
+              <div class="flex items-center gap-2">
+                <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                <p class="text-lg font-semibold">John Doe</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <button class="p-1">
+                  <img src="../assets/icons/edit.svg" alt="Edit" class="w-5 h-5" />
+                </button>
+                <button class="p-1">
+                  <img src="../assets/icons/delete.svg" alt="Delete" class="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <img src="../assets/icons/full_star.svg" alt="Star" />
+              <img src="../assets/icons/full_star.svg" alt="Star" />
+              <img src="../assets/icons/empty_star.svg" alt="Star" />
+              <img src="../assets/icons/empty_star.svg" alt="Star" />
+              <img src="../assets/icons/empty_star.svg" alt="Star" />
+             
+           <span class="text-sm ml-2">15 Likes 5 Shares</span>
+            </div>
+          </div>
+    
+          <!-- Post 3 -->
+          <div class="flex flex-col items-center w-[342px]">
+            <img src="../assets/images/Our_Boxes/Box_3.png" class="w-full h-[255px] mb-4" alt="Box Image" />
+            <div class="flex items-center justify-between w-full">
+              <div class="flex items-center gap-2">
+                <img src="../assets/icons/Profile_Picture.svg" alt="Profile Picture" />
+                <p class="text-lg font-semibold">John Doe</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <button class="p-1">
+                  <img src="../assets/icons/edit.svg" alt="Edit" class="w-5 h-5" />
+                </button>
+                <button class="p-1">
+                  <img src="../assets/icons/delete.svg" alt="Delete" class="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <img src="../assets/icons/full_star.svg" alt="Star" />
+              <img src="../assets/icons/full_star.svg" alt="Star" />
+              <img src="../assets/icons/full_star.svg" alt="Star" />
+              <img src="../assets/icons/empty_star.svg" alt="Star" />
+              <img src="../assets/icons/empty_star.svg" alt="Star" />
+          <span class="text-sm ml-2">30 Likes 12 Shares</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
 
     <!-- Footer -->
     <footer class="bg-primary text-footerText py-8">

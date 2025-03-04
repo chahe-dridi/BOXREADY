@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <title>Notifications Settings</title>
+  </head>
+  <body class="bg-background text-text font-primary">
+    <!-- Navbar -->
+    <header class="bg-primary py-4">
+        <div class="max-w-container mx-auto flex justify-between items-center px-4">
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8" />
+            <p class="text-heading5 font-bold text-navText">BOXREADY</p>
+          </div>
+  
+          <!-- Navigation Links -->
+          <nav class="hidden md:flex gap-8">
+            <a href="home.html" class="text-navItem font-semibold text-navText hover:text-text transition">Home</a>
+            <a href="Our_Boxes.html" class="text-navItem font-semibold text-navText hover:text-text transition">Our Boxes</a>
+            <a href="My_Orders.html" class="text-navItem font-semibold text-navText hover:text-text transition">My Orders</a>
+            <a href="My_Posts.html" class="text-navItem font-semibold text-navText hover:text-text transition">My Posts</a>
+            <a href="Favorite_List.html" class="text-navItem font-semibold text-navText hover:text-text transition">Favorite List</a>
+          </nav>
+  
+          <!-- Icons (Cart & Search) -->
+          <div class="flex gap-4">
+            <button class="p-2">
+              <img src="../assets/icons/search.svg" alt="Search" class="w-8 h-8 filter invert" />
+            </button>
+            <a href="Your_Cart.html">
+              <button class="p-2">
+                <img src="../assets/icons/shopping_cart.svg" alt="Cart" class="w-8 h-8 filter invert" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </header>
+  
+    <!-- Main Section -->
+    <main class="max-w-container mx-auto text-center py-16 px-4">
+      <div class="flex items-center justify-start mb-8">
+        <a href="My_Orders.html" class="text-primary font-semibold">
+          <img src="../assets/icons/Back_Icon.svg" alt="Back Icon" class="w-6 h-6 inline-block" />
+        </a>
+      </div>
+      <h1 class="text-3xl md:text-5xl font-bold mb-8">Notifications Settings</h1>
+
+      <div class="w-[795px] mx-auto p-6  rounded-lg shadow-lg mb-8">
+        <!-- Notifications Options (Centered) -->
+        <p class="text-xl font-semibold mb-4 text-center">Notifications options :</p>
+        <br>
+        <div class="flex justify-center gap-4 mb-6">
+          <label class="flex items-center gap-2">
+            <input type="radio" name="notification-type" value="silent" checked class="w-4 h-4 accent-[#f17228]" />
+            <span class="text-sm font-medium">Silent</span>
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="notification-type" value="email" class="w-4 h-4 accent-[#f17228]" />
+            <span class="text-sm font-medium">Email</span>
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="notification-type" value="sms" class="w-4 h-4 accent-[#f17228]" />
+            <span class="text-sm font-medium">SMS</span>
+          </label>
+        </div>
+<br>
+        <!-- Notifications Toggle -->
+        <div class="flex justify-center mb-6">
+          <span class="text-xl font-semibold mb-4 text-center">Notifications : </span>
+          <label class="switch">
+            <input type="checkbox" checked class="green-toggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <br>
+
+        <!-- Configurable Section (Centered with Vertical Spacing) -->
+        <p class="text-xl font-semibold mb-4 text-center">Configurable Section :</p>
+        
+        <div class="flex justify-center mb-6">
+            <div class="space-y-4"> <!-- Added vertical spacing with space-y-4 -->
+              <label class="flex items-center gap-2">
+                <input type="checkbox" name="config" value="order-confirmation" checked class="w-4 h-4 accent-[#f17228]" />
+                <span class="text-sm font-medium text-[#f17228]">Order Confirmation</span>
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="checkbox" name="config" value="in-preparation" checked class="w-4 h-4 accent-[#f17228]" />
+                <span class="text-sm font-medium text-[#f17228]">In Preparation</span>
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="checkbox" name="config" value="order-delivery" class="w-4 h-4 accent-[#f17228]" />
+                <span class="text-sm font-medium">Order Delivery</span>
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="checkbox" name="config" value="delivery-approaching" class="w-4 h-4 accent-[#f17228]" />
+                <span class="text-sm font-medium">Delivery Approaching</span>
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="checkbox" name="config" value="delivered" class="w-4 h-4 accent-[#f17228]" />
+                <span class="text-sm font-medium">Delivered</span>
+              </label>
+            </div>
+          </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-center gap-4">
+          <button class="bg-[#1A5D1A] text-white py-2 px-6 w-[220px] h-[55px] rounded-md text-[16px] font-bold flex items-center justify-center hover:bg-green-700 transition">
+            SAVE
+          </button>
+          <button class="bg-[#f17228] text-white py-2 px-6 w-[220px] h-[55px] rounded-md text-[16px] font-bold flex items-center justify-center hover:bg-orange-500 transition">
+            CANCEL
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-footerText py-8">
+        <div class="max-w-container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4">
+          <div class="text-center md:text-left">
+            <div class="flex items-center gap-2 justify-center md:justify-start">
+              <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8" />
+              <p class="text-heading5 font-bold">BOXREADY</p>
+            </div>
+          </div>
+          <div class="text-center md:text-left">
+            <h3 class="text-heading5 font-bold mb-8">Services</h3>
+            <div class="flex flex-col md:items-start gap-8">
+              <a href="home.html" class="text-footerLink font-semibold hover:text-text transition">Home</a>
+              <a href="Our_Boxes.html" class="text-footerLink font-semibold hover:text-text transition">Our Boxes</a>
+              <a href="My_Orders.html" class="text-footerLink font-semibold hover:text-text transition">My Orders</a>
+              <a href="My_Posts.html" class="text-footerLink font-semibold hover:text-text transition">My Posts</a>
+              <a href="Favorite_List.html" class="text-footerLink font-semibold hover:text-text transition">Favorite List</a>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="text-heading5 font-bold mb-8">Follow Us</h3>
+            <div class="flex flex-col md:items-start gap-10">
+              <button><img src="../assets/icons/Facebook_Icon.svg" alt="Facebook" class="w-8 h-8 mx-auto hover:opacity-70" /></button>
+              <button><img src="../assets/icons/Instagram_Icon.svg" alt="Instagram" class="w-8 h-8 mx-auto hover:opacity-70" /></button>
+              <button><img src="../assets/icons/Tiktok_Icon.svg" alt="Tiktok" class="w-8 h-8 mx-auto hover:opacity-70" /></button>
+            </div>
+          </div>
+          <div class="text-center md:text-left">
+            <h3 class="text-heading5 font-bold mb-8">Contact</h3>
+            <div class="flex flex-col md:items-start gap-10">
+              <div class="flex items-center gap-2">
+                <img src="../assets/icons/Phone_Icon.svg" alt="Phone" class="w-8 h-8" />
+                <span class="text-footerLink font-semibold">+216 70 250 000</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="../assets/icons/Mail_Icon.svg" alt="Mail" class="w-8 h-8" />
+                <span class="text-footerLink font-semibold">contact@boxready.com</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="../assets/icons/Place_Icon.svg" alt="Location" class="w-8 h-8" />
+                <span class="text-footerLink font-semibold">El Ghazala</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-excerpt text-center mt-8 font-semibold">© 2024 BoxReady. All rights reserved.</p>
+      </footer>
+  </body>
+</html>

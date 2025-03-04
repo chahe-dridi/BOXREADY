@@ -6,11 +6,11 @@
 
 ## 👥 Team Members & Responsibilities
 
-- **Wassim Triki**: 
-- **Khouloud Blehadj**: Worked on "Our_Boxes.html" ,"Personalized_Search.html", "Personalized_Search_Result.html", "Box_Comparison.html" ,"Add_My_Box_Review.html" and  "Modify_My_Box_Review.html" pages.
-- **Chaher Dridi**: Worked on "user_posts_overview.html" , "box_overview.html" , "users_posts.html" , "My_Posts.html" pages.
-- **Gofrane Abidi**: Worked on "Compare_Boxes.html","Notification_History.html","Favorite_List.html" pages.
-- **Ashref Bouden**: Worked on "Your_Cart.html" pages.
+- **Wassim Triki**: Worked on "box_details.html" ,"home.html" and "Notifications_Details.html" pages.
+- **Khouloud Blehadj**: Worked on "Our_Boxes.html" ,"Personalized_Search.html", "Personalized_Search_Result.html", "Box_Comparison.html" ,"Add_My_Box_Review.html" and "Modify_My_Box_Review.html" pages.
+- **Chaher Dridi**: Worked on "user_posts_overview.html" , "box_overview.html" , "users_posts.html" , "My_Posts.html" and My_Posts_Delete.html pages.
+- **Gofrane Abidi**: Worked on "Compare_Boxes.html","Notification_History.html"and "Favorite_List.html" pages.
+- **Ashref Bouden**: Worked on "Your_Cart.html", "Order_tracking.html","My_Orders.html" and "Notifications_Settings.html" pages.
 
 ---
 
