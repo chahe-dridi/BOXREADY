@@ -47,24 +47,36 @@
         </a>
     </div>
       <h1 class="text-[56px] font-bold">Personalized Search</h1>
-      <div class="mt-8 justify-center flex gap-4">
-              <!--Search -->
-              <div class="mt-8 flex justify-center">
-                <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[348px] h-[50px]">
-                  <input 
-                    type="text" 
-                    placeholder="Search" 
-                    class="pl-4 flex-1 bg-[#F8F6E9] text-black text-lg focus:outline-none h-full"
-                  />
-                  <button class="w-[68px] h-[68px] bg-black flex items-center justify-center">
-                    <img src="../assets/icons/search.svg" alt="Search" class="w-9 h-9 invert" />
-                  </button>
+      <div class="mt-8 flex justify-center items-center w-full">
+        <!-- Search Bar (Centered) -->
+        <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[348px] h-[50px]">
+            <input 
+                type="text" 
+                placeholder="Search" 
+                class="pl-4 flex-1 bg-[#F8F6E9] text-black text-lg focus:outline-none h-full"
+            />
+            <button class="w-[68px] h-[68px] bg-black flex items-center justify-center">
+                <img src="../assets/icons/search.svg" alt="Search" class="w-9 h-9 invert" />
+            </button>
+        </div>
+        
+        <!-- Sort Dropdown (Right Section) -->
+        <div class="ml-8 flex items-center gap-2">
+          <span class="text-lg font-medium text-black">Sort By :</span>
+          <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[200px] h-[50px] relative">
+                <select class="flex-1 bg-[#F8F6E9] text-lg font-bold text-black px-4 focus:outline-none appearance-none">
+                    <option value="featured">Featured</option>
+                    <option value="popular">POPULAR</option>
+                    <option value="newest">NEWEST</option>
+                    <option value="price_low_high">PRICE: LOW TO HIGH</option>
+                    <option value="price_high_low">PRICE: HIGH TO LOW</option>
+                </select>
+                <div class="absolute right-3 pointer-events-none">
+                    <img src="../assets/icons/arrow-down.svg" alt="Dropdown Icon">
                 </div>
-              </div>
-      
-        <p class="text-black">Sort By:</p>
-        <img src="../assets/icons/Sort.svg" alt="Sort"  />
-    </div>   
+            </div>
+        </div>
+    </div> 
       
 <section class="mt-20 ">
   <!--Sidebar-->
