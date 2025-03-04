@@ -9,30 +9,64 @@
   <body class="bg-background text-text font-primary">
     <!-- Navbar -->
     <header class="bg-primary py-4">
-      <div class="max-w-container mx-auto flex justify-between items-center px-4">
+      <div
+        class="max-w-container mx-auto flex justify-between items-center px-4"
+      >
         <!-- Logo -->
         <div class="flex items-center gap-2">
-          <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8" />
+          <img
+            src="../assets/icons/Box_Logo.svg"
+            alt="Box Logo"
+            class="w-8 h-8"
+          />
           <p class="text-heading5 font-bold text-navText">BOXREADY</p>
         </div>
 
         <!-- Navigation Links -->
         <nav class="hidden md:flex gap-8">
-          <a href="home.html" class="text-navItem font-semibold text-navText hover:text-text transition">Home</a>
-          <a href="Our_Boxes.html" class="text-navItem font-semibold text-navText hover:text-text transition">Our Boxes</a>
-          <a href="My_Orders.html" class="text-navItem font-semibold text-navText hover:text-text transition">My Orders</a>
-          <a href="My_Posts.html" class="text-navItem font-semibold text-navText hover:text-text transition">My Posts</a>
-          <a href="Favorite_List.html" class="text-navItem font-semibold text-navText hover:text-text transition">Favorite List</a>
+          <a
+            href="home.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Home</a
+          >
+          <a
+            href="Our_Boxes.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Our Boxes</a
+          >
+          <a
+            href="My_Orders.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >My Orders</a
+          >
+          <a
+            href="My_Posts.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >My Posts</a
+          >
+          <a
+            href="Favorite_List.html"
+            class="text-navItem font-semibold text-navText hover:text-text transition"
+            >Favorite List</a
+          >
         </nav>
 
         <!-- Icons (Cart & Search) -->
         <div class="flex gap-4">
           <button class="p-2">
-            <img src="../assets/icons/search.svg" alt="Search" class="w-8 h-8 filter invert" />
+            <img
+              src="../assets/icons/search.svg"
+              alt="Search"
+              class="w-8 h-8 filter invert"
+            />
           </button>
           <a href="Your_Cart.html">
             <button class="p-2">
-              <img src="../assets/icons/shopping_cart.svg" alt="Cart" class="w-8 h-8 filter invert" />
+              <img
+                src="../assets/icons/shopping_cart.svg"
+                alt="Cart"
+                class="w-8 h-8 filter invert"
+              />
             </button>
           </a>
         </div>
@@ -43,41 +77,53 @@
     <main class="max-w-container mx-auto text-center py-16 px-4">
       <div class="flex gap-[30px] flex-1">
         <a href="Our_Boxes.html">
-            <img src="../assets/icons/Back_Icon.svg" alt="Back Icon"/>
+          <img src="../assets/icons/Back_Icon.svg" alt="Back Icon" />
         </a>
       </div>
       <h1 class="text-[56px] font-bold">Personalized Search</h1>
       <div class="mt-8 flex justify-center items-center w-full">
         <!-- Search Bar (Centered) -->
-        <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-full sm:w-[348px] h-[50px]">
-            <input 
-                type="text" 
-                placeholder="Search" 
-                class="pl-4 flex-1 bg-[#F8F6E9] text-black text-lg focus:outline-none h-full"
+        <div
+          class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-full sm:w-[348px] h-[50px]"
+        >
+          <input
+            type="text"
+            placeholder="Search"
+            class="pl-4 flex-1 bg-[#F8F6E9] text-black text-lg focus:outline-none h-full"
+          />
+          <button
+            class="w-[68px] h-[68px] bg-black flex items-center justify-center"
+          >
+            <img
+              src="../assets/icons/search.svg"
+              alt="Search"
+              class="w-9 h-9 invert"
             />
-            <button class="w-[68px] h-[68px] bg-black flex items-center justify-center">
-                <img src="../assets/icons/search.svg" alt="Search" class="w-9 h-9 invert" />
-            </button>
+          </button>
         </div>
-        
+
         <!-- Sort Dropdown (Right Section) -->
         <div class="ml-8 flex items-center gap-2">
           <span class="text-lg font-medium text-black">Sort By :</span>
-          <div class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[200px] h-[50px] relative">
-                <select class="flex-1 bg-[#F8F6E9] text-lg font-bold text-black px-4 focus:outline-none appearance-none">
-                    <option value="featured">Featured</option>
-                    <option value="popular">POPULAR</option>
-                    <option value="newest">NEWEST</option>
-                    <option value="price_low_high">PRICE: LOW TO HIGH</option>
-                    <option value="price_high_low">PRICE: HIGH TO LOW</option>
-                </select>
-                <div class="absolute right-3 pointer-events-none">
-                    <img src="../assets/icons/arrow-down.svg" alt="Dropdown Icon">
-                </div>
+          <div
+            class="flex items-center border-[3px] border-black rounded-md overflow-hidden bg-[#F8F6E9] w-[200px] h-[50px] relative"
+          >
+            <select
+              class="flex-1 bg-[#F8F6E9] text-lg font-bold text-black px-4 focus:outline-none appearance-none"
+            >
+              <option value="featured">Featured</option>
+              <option value="popular">POPULAR</option>
+              <option value="newest">NEWEST</option>
+              <option value="price_low_high">PRICE: LOW TO HIGH</option>
+              <option value="price_high_low">PRICE: HIGH TO LOW</option>
+            </select>
+            <div class="absolute right-3 pointer-events-none">
+              <img src="../assets/icons/arrow-down.svg" alt="Dropdown Icon" />
             </div>
+          </div>
         </div>
-      </div>    
-      
+      </div>
+
       <!-- Sidebar and Product Grid -->
       <section class="mt-20 flex flex-col lg:flex-row gap-8">
         <!-- Sidebar -->
@@ -86,12 +132,16 @@
           <img src="../assets/icons/Line.svg" alt="Line" />
           <div class="flex items-center justify-between">
             <h3 class="text-[16px] font-semibold">Category</h3>
-            <img src="../assets/icons/Fleche_1.svg" alt="Fleche_1" class="ml-auto" />
+            <img
+              src="../assets/icons/Fleche_1.svg"
+              alt="Fleche_1"
+              class="ml-auto"
+            />
           </div>
           <!-- Categories List -->
           <div class="space-y-2">
             <div class="flex items-center gap-2">
-              <img src="../assets/icons/Check_Box.svg" alt="check_box" />
+              <img src="../assets/icons/checked_box.svg" alt="check_box" />
               <p class="text-[#6B6B6B]">Healthy Boxes</p>
             </div>
             <div class="flex items-center gap-2">
@@ -130,137 +180,203 @@
               <img src="../assets/icons/Check_Box.svg" alt="check_box" />
               <p class="text-[#6B6B6B]">Weight Loss Boxes</p>
             </div>
-       
           </div>
-<br>
+          <br />
           <img src="../assets/icons/Line.svg" alt="Line" />
           <div class="flex items-center justify-between">
             <h3 class="text-[16px] font-semibold">Meal Type</h3>
-            <img src="../assets/icons/Fleche_2.svg" alt="Fleche_2" class="ml-auto" />
+            <img
+              src="../assets/icons/Fleche_2.svg"
+              alt="Fleche_2"
+              class="ml-auto"
+            />
           </div>
 
           <img src="../assets/icons/Line.svg" alt="Line" />
           <div class="flex items-center justify-between">
             <h3 class="text-[16px] font-semibold">Mood & Occasion</h3>
-            <img src="../assets/icons/Fleche_2.svg" alt="Fleche_2" class="ml-auto" />
+            <img
+              src="../assets/icons/Fleche_2.svg"
+              alt="Fleche_2"
+              class="ml-auto"
+            />
           </div>
 
           <img src="../assets/icons/Line.svg" alt="Line" />
           <div class="flex items-center justify-between">
             <h3 class="text-[16px] font-semibold">Cuisine & Origin</h3>
-            <img src="../assets/icons/Fleche_2.svg" alt="Fleche_2" class="ml-auto" />
+            <img
+              src="../assets/icons/Fleche_2.svg"
+              alt="Fleche_2"
+              class="ml-auto"
+            />
           </div>
         </div>
-        
+
         <!-- Product Grid -->
         <div class="lg:w-3/4">
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6"
+          >
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_1.png" class="w-[255px] h-[170px] mx-auto mb-4" />
+              <img
+                src="../assets/images/Our_Boxes/Box_1.png"
+                class="w-[255px] h-[170px] mx-auto mb-4"
+              />
               <h3 class="text-[16px] font-semibold mb-2">Pure Balance Box</h3>
               <p class="text-[16px] font-normal">8,500 TND</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_2.png" class="w-[255px] h-[170px] mx-auto mb-4" />
+              <img
+                src="../assets/images/Our_Boxes/Box_2.png"
+                class="w-[255px] h-[170px] mx-auto mb-4"
+              />
               <h3 class="text-[16px] font-semibold mb-2">Smart Fuel Box</h3>
               <p class="text-[16px] font-normal">12,500 TND</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_3.png" class="w-[255px] h-[170px] mx-auto mb-4" />
+              <img
+                src="../assets/images/Our_Boxes/Box_3.png"
+                class="w-[255px] h-[170px] mx-auto mb-4"
+              />
               <h3 class="text-[16px] font-semibold mb-2">Wellness Fuel Box</h3>
               <p class="text-[16px] font-normal">7,900 TND</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_10.png" class="w-[255px] h-[170px] mx-auto mb-4" />
+              <img
+                src="../assets/images/Our_Boxes/Box_10.png"
+                class="w-[255px] h-[170px] mx-auto mb-4"
+              />
               <h3 class="text-[16px] font-semibold mb-2">Green Fuel Box</h3>
               <p class="text-[16px] font-normal">8,800 TND</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_11.png" class="w-[255px] h-[170px] mx-auto mb-4" />
+              <img
+                src="../assets/images/Our_Boxes/Box_11.png"
+                class="w-[255px] h-[170px] mx-auto mb-4"
+              />
               <h3 class="text-[16px] font-semibold mb-2">Fit & Fresh Box</h3>
               <p class="text-[16px] font-normal">7,500 TND</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_12.png" class="w-[255px] h-[170px] mx-auto mb-4" />
-              <h3 class="text-[16px] font-semibold mb-2">Wholesome Bites Box</h3>
+              <img
+                src="../assets/images/Our_Boxes/Box_12.png"
+                class="w-[255px] h-[170px] mx-auto mb-4"
+              />
+              <h3 class="text-[16px] font-semibold mb-2">
+                Wholesome Bites Box
+              </h3>
               <p class="text-[16px] font-normal">19,900 TND</p>
             </div>
-
           </div>
         </div>
       </section>
-<br><br><br>
+      <br /><br /><br />
       <div class="space-y-12">
         <!-- Popular Right Now Section -->
         <div>
           <img src="../assets/icons/Line.svg" alt="Line" />
-          <h3 class="text-[16px] font-semibold mb-[19px] md:text-left">Popular Right Now</h3>
+          <h3 class="text-[16px] font-semibold mb-[19px] md:text-left">
+            Popular Right Now
+          </h3>
           <div class="flex justify-center gap-8 mt-6">
-
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_7.png" class="w-[342px] h-[255px] mx-auto mb-[36px]" />
-              <h3 class="text-[16px] font-semibold mb-[19px]">Golden Rice Biryani Box</h3>
+              <img
+                src="../assets/images/Our_Boxes/Box_7.png"
+                class="w-[342px] h-[255px] mx-auto mb-[36px]"
+              />
+              <h3 class="text-[16px] font-semibold mb-[19px]">
+                Golden Rice Biryani Box
+              </h3>
               <p class="text-[16px] font-normal">11,750 TND</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_8.png" class="w-[342px] h-[255px] mx-auto mb-[36px]" />
-              <h3 class="text-[16px] font-semibold mb-[19px]">Fiery Flavors Spicy Box</h3>
+              <img
+                src="../assets/images/Our_Boxes/Box_8.png"
+                class="w-[342px] h-[255px] mx-auto mb-[36px]"
+              />
+              <h3 class="text-[16px] font-semibold mb-[19px]">
+                Fiery Flavors Spicy Box
+              </h3>
               <p class="text-[16px] font-normal">15,500 TND</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_9.png" class="w-[342px] h-[255px] mx-auto mb-[36px]" />
-              <h3 class="text-[16px] font-semibold mb-[19px]">Cozy Pasta Box</h3>
+              <img
+                src="../assets/images/Our_Boxes/Box_9.png"
+                class="w-[342px] h-[255px] mx-auto mb-[36px]"
+              />
+              <h3 class="text-[16px] font-semibold mb-[19px]">
+                Cozy Pasta Box
+              </h3>
               <p class="text-[16px] font-normal">12,300 TND</p>
             </div>
-
           </div>
         </div>
 
         <!-- Suggestions Section -->
         <div>
           <img src="../assets/icons/Line.svg" alt="Line" />
-          <h3 class="text-[16px] font-semibold mb-[19px] md:text-left">Suggestions</h3>
+          <h3 class="text-[16px] font-semibold mb-[19px] md:text-left">
+            Suggestions
+          </h3>
           <div class="flex justify-center gap-8 mt-6">
-
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_4.png" class="w-[342px] h-[255px] mx-auto mb-[36px]" />
-              <h3 class="text-[16px] font-semibold mb-[19px]">Happy Turnmy Box</h3>
+              <img
+                src="../assets/images/Our_Boxes/Box_4.png"
+                class="w-[342px] h-[255px] mx-auto mb-[36px]"
+              />
+              <h3 class="text-[16px] font-semibold mb-[19px]">
+                Happy Turnmy Box
+              </h3>
               <p class="text-[16px] font-normal">7,500 TND</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_5.png" class="w-[342px] h-[255px] mx-auto mb-[36px]" />
-              <h3 class="text-[16px] font-semibold mb-[19px]">Little Bites Box</h3>
+              <img
+                src="../assets/images/Our_Boxes/Box_5.png"
+                class="w-[342px] h-[255px] mx-auto mb-[36px]"
+              />
+              <h3 class="text-[16px] font-semibold mb-[19px]">
+                Little Bites Box
+              </h3>
               <p class="text-[16px] font-normal">9,500 TND</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/images/Our_Boxes/Box_6.png" class="w-[342px] h-[255px] mx-auto mb-[36px]" />
-              <h3 class="text-[16px] font-semibold mb-[19px]">Junior Power Box</h3>
+              <img
+                src="../assets/images/Our_Boxes/Box_6.png"
+                class="w-[342px] h-[255px] mx-auto mb-[36px]"
+              />
+              <h3 class="text-[16px] font-semibold mb-[19px]">
+                Junior Power Box
+              </h3>
               <p class="text-[16px] font-normal">10,900 TND</p>
             </div>
-
           </div>
         </div>
       </div>
-    </main>  
+    </main>
 
     <!-- Footer -->
     <footer class="bg-primary text-footerText py-8">
-      <div class="max-w-container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4">
-        
+      <div
+        class="max-w-container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4"
+      >
         <!-- BOXREADY Section (Aligned like other footer items) -->
         <div class="text-center md:text-left">
           <div class="flex items-center gap-2 justify-center md:justify-start">
-            <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8" />
+            <img
+              src="../assets/icons/Box_Logo.svg"
+              alt="Box Logo"
+              class="w-8 h-8"
+            />
             <p class="text-heading5 font-bold">BOXREADY</p>
           </div>
         </div>
@@ -270,51 +386,99 @@
         <div class="text-center md:text-left">
           <h3 class="text-heading5 font-bold mb-8">Services</h3>
           <div class="flex flex-col md:items-start gap-8">
-            <a href="home.html" class="text-footerLink font-semibold hover:text-text transition">Home</a>
-            <a href="Our_Boxes.html" class="text-footerLink font-semibold hover:text-text transition">Our Boxes</a>
-            <a href="My_Orders.html" class="text-footerLink font-semibold hover:text-text transition">My Orders</a>
-            <a href="My_Posts.html" class="text-footerLink font-semibold hover:text-text transition">My Posts</a>
-            <a href="Favorite_List.html" class="text-footerLink font-semibold hover:text-text transition">Favorite List</a>
+            <a
+              href="home.html"
+              class="text-footerLink font-semibold hover:text-text transition"
+              >Home</a
+            >
+            <a
+              href="Our_Boxes.html"
+              class="text-footerLink font-semibold hover:text-text transition"
+              >Our Boxes</a
+            >
+            <a
+              href="My_Orders.html"
+              class="text-footerLink font-semibold hover:text-text transition"
+              >My Orders</a
+            >
+            <a
+              href="My_Posts.html"
+              class="text-footerLink font-semibold hover:text-text transition"
+              >My Posts</a
+            >
+            <a
+              href="Favorite_List.html"
+              class="text-footerLink font-semibold hover:text-text transition"
+              >Favorite List</a
+            >
           </div>
-        </div>  
-       
-        <!-- Follow Us -->  
+        </div>
+
+        <!-- Follow Us -->
         <div class="text-center">
           <h3 class="text-heading5 font-bold mb-8">Follow Us</h3>
           <div class="flex flex-col md:items-start gap-10">
             <button>
-              <img src="../assets/icons/Facebook_Icon.svg" alt="Facebook" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+              <img
+                src="../assets/icons/Facebook_Icon.svg"
+                alt="Facebook"
+                class="h-6 mx-auto hover:opacity-70 w-8 h-8"
+              />
             </button>
             <button>
-              <img src="../assets/icons/Instagram_Icon.svg" alt="Instagram" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+              <img
+                src="../assets/icons/Instagram_Icon.svg"
+                alt="Instagram"
+                class="h-6 mx-auto hover:opacity-70 w-8 h-8"
+              />
             </button>
             <button>
-              <img src="../assets/icons/Tiktok_Icon.svg" alt="Tiktok" class="h-6 mx-auto hover:opacity-70 w-8 h-8" />
+              <img
+                src="../assets/icons/Tiktok_Icon.svg"
+                alt="Tiktok"
+                class="h-6 mx-auto hover:opacity-70 w-8 h-8"
+              />
             </button>
           </div>
         </div>
 
         <!-- Contact -->
-        <div class="text-center md:text-left ">
+        <div class="text-center md:text-left">
           <h3 class="text-heading5 font-bold mb-8">Contact</h3>
           <div class="flex flex-col md:items-start gap-10">
             <div class="flex items-center gap-2">
-              <img src="../assets/icons/Phone_Icon.svg" alt="Phone" class="h-5 w-8 h-8" />
+              <img
+                src="../assets/icons/Phone_Icon.svg"
+                alt="Phone"
+                class="h-5 w-8 h-8"
+              />
               <span class="text-footerLink font-semibold">+216 70 250 000</span>
             </div>
             <div class="flex items-center gap-2">
-              <img src="../assets/icons/Mail_Icon.svg" alt="Mail" class="h-5 w-8 h-8" />
-              <span class="text-footerLink font-semibold">contact@boxready.com</span>
+              <img
+                src="../assets/icons/Mail_Icon.svg"
+                alt="Mail"
+                class="h-5 w-8 h-8"
+              />
+              <span class="text-footerLink font-semibold"
+                >contact@boxready.com</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="../assets/icons/Place_Icon.svg" alt="Location" class="h-5 w-8 h-8" />
+              <img
+                src="../assets/icons/Place_Icon.svg"
+                alt="Location"
+                class="h-5 w-8 h-8"
+              />
               <span class="text-footerLink font-semibold">El Ghazala</span>
             </div>
           </div>
         </div>
       </div>
 
-      <p class="text-excerpt text-center mt-8 font-semibold">© 2024 BoxReady. All rights reserved.</p>
+      <p class="text-excerpt text-center mt-8 font-semibold">
+        © 2024 BoxReady. All rights reserved.
+      </p>
     </footer>
-    </body>
-  </html>
+  </body>
+</html>
