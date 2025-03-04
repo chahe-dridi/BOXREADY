@@ -45,7 +45,7 @@
    
    
     <div class="flex gap-[30px] flex-1">
-        <a href="users_posts.html">
+        <a href="Our_Boxes.html">
             <img src="../assets/icons/Back_Icon.svg" alt="Back Icon"/>
         </a>
     </div>
@@ -73,18 +73,34 @@
           <h3 class="text-heading3">Pure Balance Box</h3>
           <h5 class="text-heading5 mt-2">9.800 TND</h5>
   
-          <div class="mt-4 flex flex-col gap-2">
+            <div class="mt-4 flex flex-col gap-2">
               <h5 class="text-heading5">Quantity</h5>
               <div class="flex items-center gap-2">
-                  <button class="text-button p-2">
-                      <img src="../assets/icons/remove.svg" alt="Decrease Quantity" />
-                  </button>
-                  <span class="text-body">1</span>
-                  <button class="text-button p-2">
-                      <img src="../assets/icons/add.svg" alt="Increase Quantity" />
-                  </button>
+                <button class="text-button p-2" onclick="decreaseQuantity()">
+                  <img src="../assets/icons/remove.svg" alt="Decrease Quantity" />
+                </button>
+                <span id="quantity" class="text-body">1</span>
+                <button class="text-button p-2" onclick="increaseQuantity()">
+                  <img src="../assets/icons/add.svg" alt="Increase Quantity" />
+                </button>
               </div>
-          </div>
+            </div>
+
+            <script>
+              function increaseQuantity() {
+                const quantityElement = document.getElementById('quantity');
+                let quantity = parseInt(quantityElement.textContent);
+                quantityElement.textContent = quantity + 1;
+              }
+
+              function decreaseQuantity() {
+                const quantityElement = document.getElementById('quantity');
+                let quantity = parseInt(quantityElement.textContent);
+                if (quantity > 1) {
+                  quantityElement.textContent = quantity - 1;
+                }
+              }
+            </script>
   
           <!-- Buttons -->
           <div class="mt-4 flex flex-col gap-4">
@@ -105,14 +121,15 @@
   
           <!-- Actions: Save, Share, Favourite -->
           <div class="flex justify-between w-full mt-6">
+            <div class="flex items-center gap-2 cursor-pointer">
+              <img src="../assets/icons/share.svg" class="w-[24px] h-[24px]" />
+              <span class="text-[20px]">Share</span>
+          </div>
               <div class="flex items-center gap-2 cursor-pointer">
                   <img src="../assets/icons/save.svg" class="w-[24px] h-[24px]" />
                   <span class="text-[20px]">Save</span>
               </div>
-              <div class="flex items-center gap-2 cursor-pointer">
-                  <img src="../assets/icons/share.svg" class="w-[24px] h-[24px]" />
-                  <span class="text-[20px]">Share</span>
-              </div>
+            
               <div class="flex items-center gap-2 cursor-pointer">
                   <img src="../assets/icons/heart.svg" class="w-[24px] h-[24px]" />
                   <span class="text-[20px]">Favourite</span>
