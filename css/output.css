@@ -763,10 +763,6 @@ strong,
   margin-bottom: 3rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -883,6 +879,10 @@ strong,
   margin-top: 2rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -945,10 +945,6 @@ strong,
 
 .h-\[170px\] {
   height: 170px;
-}
-
-.h-\[237px\] {
-  height: 237px;
 }
 
 .h-\[24px\] {
@@ -1025,6 +1021,10 @@ strong,
 
 .h-full {
   height: 100%;
+}
+
+.h-\[237px\] {
+  height: 237px;
 }
 
 .max-h-0 {
@@ -1139,10 +1139,6 @@ strong,
   width: 100%;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
@@ -1177,6 +1173,10 @@ strong,
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .flex-1 {
@@ -1281,10 +1281,6 @@ strong,
   gap: 0.625rem;
 }
 
-.gap-24 {
-  gap: 6rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1321,10 +1317,8 @@ strong,
   gap: 60px;
 }
 
-.space-x-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+.gap-24 {
+  gap: 6rem;
 }
 
 .space-y-12 > :not([hidden]) ~ :not([hidden]) {
@@ -1349,6 +1343,12 @@ strong,
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1442,11 +1442,6 @@ strong,
   background-color: rgb(241 114 40 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#F8F5E1\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 245 225 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[\#F8F6E9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(248 246 233 / var(--tw-bg-opacity, 1));
@@ -1467,11 +1462,6 @@ strong,
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
-}
-
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(30 130 76 / var(--tw-bg-opacity, 1));
@@ -1485,6 +1475,16 @@ strong,
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#F8F5E1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 245 225 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -1513,16 +1513,16 @@ strong,
   padding: 0.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-10 {
@@ -1633,11 +1633,6 @@ strong,
   line-height: 2.25rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-\[14px\] {
   font-size: 14px;
 }
@@ -1739,12 +1734,13 @@ strong,
   line-height: 1rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
-.font-extrabold {
-  font-weight: 800;
+.font-bold {
+  font-weight: 700;
 }
 
 .font-medium {
@@ -1757,6 +1753,10 @@ strong,
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .leading-\[28px\] {
@@ -1792,11 +1792,6 @@ strong,
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
-}
-
 .text-navText {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -1825,6 +1820,11 @@ strong,
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -2249,12 +2249,12 @@ input:checked + .slider:before {
     max-width: 400px;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -2306,11 +2306,6 @@ input:checked + .slider:before {
     text-align: left;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -2326,6 +2321,11 @@ input:checked + .slider:before {
 
   .md\:text-heading3 {
     font-size: 2.25rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-xl {
