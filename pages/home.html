@@ -75,19 +75,65 @@
 
     <!-- Main Section -->
     <main class="max-w-container mx-auto text-center py-16">
-      <section class="grid grid-cols-12">
-        <div class="col-span-7">
-          <h1 class="text-heading1 font-bold text-left">
+      <section class="md:grid grid-cols-12 px-16 md:px-0">
+        <div class="md:col-span-7">
+          <h1 class="text-heading1 font-bold md:text-left">
             Your Box, Your Meal, Your Way.
           </h1>
-          <h5 class="font-medium text-left mt-16">
+          <h5 class="font-medium md:text-left mt-16">
             Create your perfect meal with the touch of a button. We pack it, you
             enjoy it your way, every time.
           </h5>
           <button class="btn-primary px-5 mt-10">PERSONALIZED SEARCH</button>
         </div>
-        <div class="col-span-5">
+        <div class="col-span-5 md:block hidden">
           <img src="../assets/images/home.png" alt="Home image" srcset="" />
+        </div>
+      </section>
+      <section class="text-center mt-20">
+        <h3 class="font-semibold">_Popular Boxes_</h3>
+        <h5 class="font-medium mt-10">
+          Fresh, locally sourced ingredients for a flavorful and sustainable
+          experience
+        </h5>
+        <div class="flex flex-col md:flex-row gap-8 mt-16">
+          <div class="text-center">
+            <img
+              src="../assets/images/Our_Boxes/Box_1.png"
+              class="w-[342px] h-[255px] mx-auto mb-[36px]"
+            />
+            <h3 class="text-[16px] font-semibold mb-[19px]">
+              Pure Balance Box
+            </h3>
+            <p class="text-[16px] font-normal">9,800 TND</p>
+            <a href="./box_details.html">
+              <button class="btn-primary px-10 mt-4">BOX DETAILS</button>
+            </a>
+          </div>
+          <div class="text-center">
+            <img
+              src="../assets/images/Our_Boxes/Box_2.png"
+              class="w-[342px] h-[255px] mx-auto mb-[36px]"
+            />
+            <h3 class="text-[16px] font-semibold mb-[19px]">Smart Fuel Box</h3>
+            <p class="text-[16px] font-normal">12,500 TND</p>
+            <a href="./box_details.html">
+              <button class="btn-primary px-10 mt-4">BOX DETAILS</button>
+            </a>
+          </div>
+          <div class="text-center">
+            <img
+              src="../assets/images/Our_Boxes/Box_3.png"
+              class="w-[342px] h-[255px] mx-auto mb-[36px]"
+            />
+            <h3 class="text-[16px] font-semibold mb-[19px]">
+              Wellness Fuel Box
+            </h3>
+            <p class="text-[16px] font-normal">7,900 TND</p>
+            <a href="./box_details.html">
+              <button class="btn-primary px-10 mt-4">BOX DETAILS</button>
+            </a>
+          </div>
         </div>
       </section>
     </main>
