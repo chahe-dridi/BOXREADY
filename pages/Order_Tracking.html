@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <title>Order Tracking</title>
+  </head>
+  <body class="bg-background text-text font-primary">
+    <!-- Navbar -->
+    <header class="bg-primary py-4">
+      <div class="max-w-container mx-auto flex justify-between items-center px-4">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8 filter invert" />
+          <p class="text-heading5 font-bold text-white">BOXREADY</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex gap-8">
+          <a href="home.html" class="text-navItem font-semibold text-white hover:text-[#F17228] transition">Home</a>
+          <a href="Our_Boxes.html" class="text-navItem font-semibold text-white hover:text-[#F17228] transition">Our Boxes</a>
+          <a href="My_Orders.html" class="text-navItem font-semibold text-white hover:text-[#F17228] transition">My Orders</a>
+          <a href="My_Posts.html" class="text-navItem font-semibold text-white hover:text-[#F17228] transition">My Posts</a>
+          <a href="Favorite_List.html" class="text-navItem font-semibold text-white hover:text-[#F17228] transition">Favorite List</a>
+        </nav>
+
+        <!-- Icons (Cart & Search) -->
+        <div class="flex gap-4">
+          <button class="p-2">
+            <img src="../assets/icons/search.svg" alt="Search" class="w-8 h-8 filter invert" />
+          </button>
+          <a href="Your_Cart.html">
+            <button class="p-2">
+              <img src="../assets/icons/shopping_cart.svg" alt="Cart" class="w-8 h-8 filter invert" />
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="max-w-container mx-auto text-center py-16 px-4">
+      <div class="flex items-center justify-start mb-8">
+        <a href="My_Orders.html" class="text-primary font-semibold">
+          <img src="../assets/icons/Back_Icon.svg" alt="Back Icon" class="w-6 h-6 inline-block" />
+        </a>
+      </div>
+      <h1 class="text-3xl md:text-5xl font-bold mb-8">Order Tracking</h1>
+
+      <div class="relative w-[795px] mx-auto p-6 rounded-lg shadow-lg mb-8">
+        <h2 class="text-lg font-semibold mb-4">Order : #0146624</h2>
+        
+        <!-- Progress Tracker -->
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex flex-col items-center">
+              <div class="progress-circle bg-[#f17228] w-20 h-20" style="font-size: 2rem;">
+                <img src="../assets/icons/order.svg" class="w-8 h-8 filter invert filter brightness(0) saturate(0)" style="filter: invert(100%) brightness(0) saturate(0) !important;" />
+              </div>
+              <p class="text-sm mt-4">Order Confirmed</p>
+              <p class="text-xs text-gray-500">04/02/2025 1:45 PM</p>
+            </div>
+            <div class="progress-line w-1/3"></div>
+            <div class="flex flex-col items-center">
+              <div class="progress-circle bg-[#f17228] w-20 h-20" style="font-size: 2rem;">
+                <img src="../assets/icons/clock.svg" class="w-8 h-8 filter invert filter brightness(0) saturate(0)" style="filter: invert(100%) brightness(0) saturate(0) !important;" />
+              </div>
+              <p class="text-sm mt-4">In Preparation</p>
+              <p class="text-xs text-gray-500">02/02/2025 8:00 AM</p>
+            </div>
+            <div class="progress-line w-1/3"></div>
+            <div class="flex flex-col items-center">
+              <div class="progress-circle bg-[#f17228] w-20 h-20" style="font-size: 2rem;">
+                <img src="../assets/icons/truck.svg" class="w-8 h-8 filter invert filter brightness(0) saturate(0)" style="filter: invert(100%) brightness(0) saturate(0) !important;" />
+              </div>
+              <p class="text-sm mt-4">Delivery In Progress</p>
+              <p class="text-xs text-gray-500">02/02/2025 10:00 AM</p>
+            </div>
+            <div class="progress-line w-1/3"></div>
+            <div class="flex flex-col items-center">
+              <div class="progress-circle bg-black w-20 h-20" style="font-size: 2rem;">
+                <img src="../assets/icons/delivered.svg" class="w-8 h-8 filter invert filter brightness(0) saturate(0)" style="filter: invert(100%) brightness(0) saturate(0) !important;" />
+              </div>
+              <p class="text-sm mt-4">Delivered</p>
+            </div>
+          </div>
+
+        <!-- Order Details (Styled like Real-time Notifications) -->
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-lg font-medium">Estimated time of arrival:</span>
+          <span class="text-lg">20 minutes</span>
+        </div>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-lg font-medium">Total amount:</span>
+          <span class="text-lg">12.900 TND</span>
+        </div>
+        
+        <!-- Real-time Notifications Toggle -->
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-lg font-medium">Real-time notifications:</span>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <!-- More Details Button (Bottom Right, Styled like .btn-secondary:hover) -->
+        <a href="#" class="absolute bottom-6 right-6 h-[55px] bg-[#000] text-white rounded-[8px] text-black font-semibold transition duration-300 flex items-center justify-center" style="width: 160px;">
+          MORE DETAILS
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+      <div class="max-w-container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4">
+        <!-- BOXREADY Section -->
+        <div class="text-center md:text-left">
+          <div class="flex items-center gap-2 justify-center md:justify-start">
+            <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8 filter invert" />
+            <p class="text-heading5 font-bold text-white">BOXREADY</p>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="text-center md:text-left">
+          <h3 class="text-heading5 font-bold mb-8 text-white">Services</h3>
+          <div class="flex flex-col md:items-start gap-8">
+            <a href="home.html" class="text-footerLink font-semibold text-white hover:text-[#F17228] transition">Home</a>
+            <a href="Our_Boxes.html" class="text-footerLink font-semibold text-white hover:text-[#F17228] transition">Our Boxes</a>
+            <a href="My_Orders.html" class="text-footerLink font-semibold text-white hover:text-[#F17228] transition">My Orders</a>
+            <a href="My_Posts.html" class="text-footerLink font-semibold text-white hover:text-[#F17228] transition">My Posts</a>
+            <a href="Favorite_List.html" class="text-footerLink font-semibold text-white hover:text-[#F17228] transition">Favorite List</a>
+          </div>
+        </div>
+
+        <!-- Follow Us -->
+        <div class="text-center">
+          <h3 class="text-heading5 font-bold mb-8 text-white">Follow Us</h3>
+          <div class="flex flex-col md:items-start gap-10">
+            <button>
+              <img src="../assets/icons/Facebook_Icon.svg" alt="Facebook" class="w-8 h-8 mx-auto filter invert hover:opacity-70" />
+            </button>
+            <button>
+              <img src="../assets/icons/Instagram_Icon.svg" alt="Instagram" class="w-8 h-8 mx-auto filter invert hover:opacity-70" />
+            </button>
+            <button>
+              <img src="../assets/icons/Tiktok_Icon.svg" alt="Tiktok" class="w-8 h-8 mx-auto filter invert hover:opacity-70" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="text-center md:text-left">
+          <h3 class="text-heading5 font-bold mb-8 text-white">Contact</h3>
+          <div class="flex flex-col md:items-start gap-10">
+            <div class="flex items-center gap-2">
+              <img src="../assets/icons/Phone_Icon.svg" alt="Phone" class="w-8 h-8 filter invert" />
+              <span class="text-footerLink font-semibold text-white">+216 70 250 000</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="../assets/icons/Mail_Icon.svg" alt="Mail" class="w-8 h-8 filter invert" />
+              <span class="text-footerLink font-semibold text-white">contact@boxready.com</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="../assets/icons/Place_Icon.svg" alt="Location" class="w-8 h-8 filter invert" />
+              <span class="text-footerLink font-semibold text-white">El Ghazala</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-excerpt text-center mt-8 font-semibold text-white">© 2024 BoxReady. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
