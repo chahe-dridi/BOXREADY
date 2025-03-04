@@ -845,6 +845,14 @@ strong,
   height: 5rem;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-3\.5 {
+  height: 0.875rem;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -1280,11 +1288,6 @@ strong,
   background-color: rgb(30 130 76 / var(--tw-bg-opacity, 1));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(241 114 40 / var(--tw-bg-opacity, 1));
@@ -1550,10 +1553,6 @@ strong,
   accent-color: #f17228;
 }
 
-.accent-white {
-  accent-color: #fff;
-}
-
 .opacity-0 {
   opacity: 0;
 }
@@ -1806,11 +1805,6 @@ input:checked + .slider:before {
 .hover\:bg-orange-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:text-\[\#F17228\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(241 114 40 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-text:hover {
