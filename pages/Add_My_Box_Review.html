@@ -40,82 +40,89 @@
     </header>
 
     <main class="max-w-container mx-auto text-center py-16 px-4 ">
-        <div class="flex gap-[30px] flex-1">
-            <a href="Our_Boxes.html">
-                <img src="../assets/icons/Back_Icon.svg" alt="Back Icon"/>
-            </a>
-        </div>
-      <h1 class="text-[56px] font-bold mb-[100px]">Add My Box Review</h1>
+      <div class="flex gap-[30px] flex-1 justify-start">
+        <a href="Our_Boxes.html">
+          <img src="../assets/icons/Back_Icon.svg" alt="Back Icon" class="w-8 h-8" />
+        </a>
+      </div>
+      <h1 class="text-[36px] md:text-[56px] font-bold mb-[40px] md:mb-[100px]">Add My Box Review</h1>
 
-      <section >
-      <div class="flex flex-col items-center text-left ">
+      <section class="mt-10 md:mt-20">
+        <div class="flex flex-col items-center text-left max-w-[400px] mx-auto">
+          <div class="mb-[37px] w-full">
+            <label for="fullName" class="text-black text-base font-semibold block mb-4">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your full name" class="w-full h-[40px] px-4 border rounded-lg focus:ring-2 focus:ring-primary">
+          </div>
 
-        <div class="mb-[37px] ">
-          <label for="fullName" class="text-black text-base font-semibold block mb-4 ">Full Name</label>
-          <input type="text" id="fullName" placeholder="Enter your full name" class="w-[353px] h-[40px] px-4 border rounded-lg focus:ring-2 focus:ring-primary">
-        </div>
+          <div class="mb-[37px] w-full">
+            <label for="boxName" class="text-black text-base font-semibold block mb-4">Box Name</label>
+            <input type="text" id="boxName" placeholder="Enter box name" class="w-full h-[40px] px-4 border rounded-lg focus:ring-2 focus:ring-primary">
+          </div>
 
-        <div class="mb-[37px]">
-          <label for="boxName" class="text-black text-base font-semibold block mb-4">Box Name</label>
-          <input type="text" id="boxName" placeholder="Enter box name" class="w-[353px] h-[40px] px-4 border rounded-lg focus:ring-2 focus:ring-primary">
-        </div>
+          <div class="mb-[37px] w-full">
+            <label for="category" class="text-black text-base font-semibold block mb-4">Category</label>
+            <select id="category" class="w-full h-[40px] px-4 border rounded-lg focus:ring-2 focus:ring-primary">
+              <option disabled selected>Category</option>
+              <option>Healthy Boxes</option>
+              <option>Kids Boxes</option>
+              <option>Carbs & Comfort Boxes</option>
+              <option>Protein Power Boxes</option>
+              <option>Vegetarian & Vegan Boxes</option>
+              <option>Spicy & Exotic Boxes</option>
+              <option>Seafood Lover Boxes</option>
+              <option>Low-Carb & Keto Boxes</option>
+              <option>Sweet Treat Boxes</option>
+              <option>Weight Loss Boxes</option>
+            </select>
+          </div>
 
-        <div class="mb-[37px]">
-          <label for="category" class="text-black text-base font-semibold block mb-4">Category</label>
-          <select id="category" class="w-[353px] h-[40px] px-4 border rounded-lg focus:ring-2 focus:ring-primary">
-            <option disabled selected>Category</option>
-            <option>Healthy Boxes</option>
-            <option>Kids Boxes</option>
-            <option>Carbs & Comfort Boxes</option>
-          </select>
-        </div>
-
-        <div class="mb-[37px] ">
+          <div class="mb-[37px] w-full">
             <label for="uploadPhoto" class="text-black text-base font-semibold block mb-4">Upload Box Photo</label>
-            <div class="flex items-center gap-4">
-              <input type="text" id="uploadPhoto" placeholder="Upload photo" class="w-[240px] h-[40px] px-4 border rounded-lg text-center">
-              <button>
-                <img src="../assets/icons/Button_Upload.svg" alt="Upload" />
-              </button>
+            <div class="flex items-center gap-0">
+              <input type="text" id="uploadPhoto" placeholder="Upload Photo" class="w-full h-[40px] px-4 border rounded-lg text-left">
+              <button class="h-[40px] px-4 bg-black text-white rounded-r-lg">Upload</button>
             </div>
           </div>
 
-        <div class="mb-[37px]">
-          <label for="boxReview" class="text-black text-base font-semibold block mb-4">Box Review</label>
-          <textarea id="boxReview" placeholder="Value" class="w-[353px] h-[80px] px-4 border rounded-lg focus:ring-2 focus:ring-primary"></textarea>
-        </div>
+          <div class="mb-[37px] w-full">
+            <label for="boxReview" class="text-black text-base font-semibold block mb-4">Box Review</label>
+            <textarea id="boxReview" placeholder="Value" class="w-full h-[80px] px-4 border rounded-lg focus:ring-2 focus:ring-primary"></textarea>
+          </div>
 
-        <div class="mb-[37px] flex items-center gap-[25px]">
-            <label for="rating" class="text-black text-base font-semibold">Rating</label>
-            <img src="../assets/icons/rating.svg" alt="Rating" class="w-24" />
-        </div>
-  
-          <div class="flex justify-center gap-[131px] mt-8">
-              <div class="w-[200px] h-[55px] px-2 py-6 bg-[#1e824c] rounded-lg justify-center items-center gap-2.5 inline-flex">
-                <div class="text-center text-black text-base font-bold font-['Montserrat']">
-                    <button>
-                        SAVE
+          <div class="mb-[37px] flex items-center justify-between w-full">
+            <label for="rating" class="text-black text-base font-semibold whitespace-nowrap text-left">Rating</label>
+            <img src="../assets/icons/rating.svg" alt="Rating" class="ml-[50px]" />
+          </div>
+
+          <div class="flex justify-center gap-[60px] md:gap-[131px] mt-8 ">
+            
+            <!-- Save Button -->
+          <div class="w-[200px] h-[54.48px] px-2 py-6 bg-[#1e824c] rounded-lg flex justify-center items-center gap-2.5 inline-flex">
+              <div class="text-center text-black text-base font-bold font-['Montserrat']">
+                   <button class="w-full h-full">
+                       SAVE
                     </button>
-                </div>
               </div>
-              <div class="w-[200px] h-[54.84px] px-2 py-6 bg-[#f17228] rounded-lg justify-center items-center gap-2.5 inline-flex">
-                <div class="text-center text-black text-base font-bold font-['Montserrat']">
-                    <button>
-                        CANCEL
-                    </button>
-                </div>
-              </div>
+          </div>
+
+           <!-- Cancel Button -->
+          <div class="w-[200px] h-[54.84px] px-2 py-6 bg-[#f17228] rounded-lg flex justify-center items-center gap-2.5 inline-flex">
+            <div class="text-center text-black text-base font-bold font-['Montserrat']">
+               <button class="w-full h-full">
+                 CANCEL
+               </button>
+             </div>
+          
             </div>
           </div>
-      </div>  
-        </section>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-primary text-footerText py-8">
       <div class="max-w-container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4">
-        
-        <!-- BOXREADY Section (Aligned like other footer items) -->
+        <!-- BOXREADY Section -->
         <div class="text-center md:text-left">
           <div class="flex items-center gap-2 justify-center md:justify-start">
             <img src="../assets/icons/Box_Logo.svg" alt="Box Logo" class="w-8 h-8" />
@@ -124,7 +131,6 @@
         </div>
 
         <!-- Services -->
-
         <div class="text-center md:text-left">
           <h3 class="text-heading5 font-bold mb-8">Services</h3>
           <div class="flex flex-col md:items-start gap-8">
@@ -134,9 +140,9 @@
             <a href="My_Posts.html" class="text-footerLink font-semibold hover:text-text transition">My Posts</a>
             <a href="Favorite_List.html" class="text-footerLink font-semibold hover:text-text transition">Favorite List</a>
           </div>
-        </div>  
-       
-        <!-- Follow Us -->  
+        </div>
+
+        <!-- Follow Us -->
         <div class="text-center">
           <h3 class="text-heading5 font-bold mb-8">Follow Us</h3>
           <div class="flex flex-col md:items-start gap-10">
@@ -153,7 +159,7 @@
         </div>
 
         <!-- Contact -->
-        <div class="text-center md:text-left ">
+        <div class="text-center md:text-left">
           <h3 class="text-heading5 font-bold mb-8">Contact</h3>
           <div class="flex flex-col md:items-start gap-10">
             <div class="flex items-center gap-2">
@@ -174,5 +180,5 @@
 
       <p class="text-excerpt text-center mt-8 font-semibold">© 2024 BoxReady. All rights reserved.</p>
     </footer>
-    </body>
-  </html>
+  </body>
+</html>
